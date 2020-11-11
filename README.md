@@ -1,2 +1,1 @@
-Apocalypse Mod A19.2 For 7 days to die 
-installation extract the files inside 7 days to die folder
+Welcome to the Apocalypse Mod for 7 days to die A19.2 
