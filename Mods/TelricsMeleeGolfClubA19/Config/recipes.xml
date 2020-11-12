@@ -1,0 +1,19 @@
+<configs>
+<append xpath="/recipes">
+<recipe name="meleeGolfClub" count="1" tags="perkPummelPete">
+	<ingredient name="resourceForgedIron" count="10"/>
+    <ingredient name="resourceWood" count="20"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5,0.3" tags="resourceForgedIron,resourceWood,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+</append>
+
+
+
+
+
+
+</configs>

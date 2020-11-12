@@ -1,0 +1,13 @@
+<configs>
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+	<item name="meleeGuitar"/>
+</append>
+
+
+
+
+
+
+
+
+</configs>

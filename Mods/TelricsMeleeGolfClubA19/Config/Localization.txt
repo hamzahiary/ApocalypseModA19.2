@@ -1,0 +1,6 @@
+Key,English,Japanese
+
+---------------Items----------------------
+meleeGolfClub,"[e7a729]Golf Club[-]","[e7a729]Japanese[-]"
+meleeGolfClubDesc,"[e7a729]A metal golf club will show those pesky zombies!\n\nUses club progression perks.[-]","[e7a729]Japanese[-]"
+
