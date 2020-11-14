@@ -4670,7 +4670,6 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="1" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.45"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
 	<item name="oldCash" count="50,100" prob="0.55"/>
 	<item group="junk" prob="0.65"/>
 	<item group="rareMedicine" count="1,2" prob="0.15"/>
@@ -4692,6 +4691,7 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="2" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
+	<item name="apparelNightvisionGoggles" prob="0.1"/>
 	<item name="oldCash" count="100,150" prob="0.75"/>
 	<item group="rareMedicine" count="1,2" prob="0.35"/>
 	<item name="drugVitamins" count="1,2" prob="0.25"/>
@@ -4714,7 +4714,7 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.45"/>
 	<item group="groupAmmoRegular" count="3" prob="0.45"/>
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
+	<item name="apparelNightvisionGoggles" prob="0.15"/>
 	<item name="oldCash" count="150,250" prob="0.45"/>
 	<item group="rareMedicine" count="2,3" prob="0.35"/>
 	<item group="groupTreasureMaps" prob="0.35"/>
@@ -4734,7 +4734,7 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="3" prob="0.5"/>
 	<item group="groupWeaponsAllScaled" prob="0.4"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
+	<item name="apparelNightvisionGoggles" prob="0.2"/>
 	<item name="oldCash" count="250,500" prob="0.45"/>
 	<item group="rareMedicine" count="2,3" prob="0.35"/>
 	<item group="groupTreasureMaps" prob="0.35"/>
@@ -4754,7 +4754,7 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.6"/>
 	<item group="groupAmmoRegular" count="4" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.5"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0"/>
+	<item name="apparelNightvisionGoggles" prob="0.25"/>
 	<item name="oldCash" count="500,1000" prob="0.55"/>
 	<item group="rareMedicine" count="3,4" prob="0.45"/>
 	<item group="groupTreasureMaps" prob="0.45"/>

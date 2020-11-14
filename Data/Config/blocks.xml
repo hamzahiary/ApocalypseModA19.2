@@ -28000,8 +28000,9 @@ NOT the TextureNumber.
 </block>
 
 <block name="scrap Iron Bars Centered">
-	<property name="CustomIcon" value="scrapBars"/>
+	<property name="CustomIcon" value="woodBarsCentered"/>
 	<property name="DisplayType" value="blockHardened" />
+	<property name="CustomIconTint" value="132,105,84"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="MaxDamage" value="1000"/>
 	<property name="Shape" value="New"/>
@@ -28087,7 +28088,7 @@ NOT the TextureNumber.
 
 <block name="steel Bars Centered">
 <property name="Extends" value="ironBarsCentered"/>
-<property name="CustomIcon" value="steelBars"/>
+<property name="CustomIcon" value="ironBarsCentered"/>
 <property name="CustomIconTint" value="0033FF"/>
 <property name="Material" value="Mmetal_hard"/>
 <property name="MaxDamage" value="7500"/>
