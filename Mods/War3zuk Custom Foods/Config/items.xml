@@ -22,6 +22,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Science,CFChemicals,Medical"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -51,6 +52,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -80,6 +82,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -109,6 +112,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -138,6 +142,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -167,6 +172,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -196,6 +202,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -225,6 +232,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -254,6 +262,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -283,6 +292,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -292,9 +302,9 @@
 		<property name="Create_item" value="HDBowl" />
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -312,6 +322,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -321,9 +332,9 @@
 		<property name="Create_item" value="HDBowl" />
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -341,6 +352,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -350,9 +362,9 @@
 		<property name="Create_item" value="HDBowl" />
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -370,6 +382,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -379,9 +392,9 @@
 		<property name="Create_item" value="HDBowl" />
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -399,6 +412,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -408,9 +422,9 @@
 		<property name="Create_item" value="HDBowl" />
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -428,6 +442,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -457,6 +472,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -486,6 +502,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -515,6 +532,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -523,9 +541,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="90"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="90"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -544,6 +562,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -552,9 +571,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="90"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="90"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<display_value name="dCureInfection" value=".01"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="1"/>
@@ -572,6 +591,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -580,9 +600,9 @@
 		<property name="Sound_start" value="player_eating"/>
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -597,6 +617,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -605,9 +626,9 @@
 		<property name="Sound_start" value="player_eating"/>
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -622,6 +643,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -630,9 +652,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -647,6 +669,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -655,9 +678,9 @@
 		<property name="Sound_start" value="player_eating"/>
 		</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -672,6 +695,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -680,9 +704,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="50"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -697,6 +721,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -705,9 +730,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -722,6 +747,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -730,9 +756,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -747,6 +773,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -755,9 +782,9 @@
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -772,6 +799,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -780,9 +808,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -797,6 +825,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -805,9 +834,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -822,6 +851,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -830,9 +860,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -847,6 +877,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -855,9 +886,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -872,6 +903,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -880,9 +912,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -897,6 +929,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -905,9 +938,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="85"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -922,6 +955,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -930,9 +964,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="65"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -947,6 +981,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -955,9 +990,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="45"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="90"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="90"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="35"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -972,6 +1007,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -980,9 +1016,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -997,6 +1033,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -1005,9 +1042,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -1022,6 +1059,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 	<property name="Class" value="Eat"/>
@@ -1030,9 +1068,9 @@
 	<property name="Sound_start" value="player_eating"/>
 	</property>
 	<effect_group tiered="false" name="Food Tier 0">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="75"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -1048,6 +1086,7 @@
 	<property name="Stacknumber" value="250"/>
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="110"/>
+	<property name="UnlockedBy" value="perkMasterChef"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -1060,8 +1099,8 @@
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 		
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="75"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
 			
 			<display_value name="dHypothermalResist" value="30"/>
 			<display_value name="dDuration" value="180"/>

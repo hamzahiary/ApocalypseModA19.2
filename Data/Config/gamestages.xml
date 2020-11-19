@@ -220,44 +220,32 @@ Console command: forcegamestage
 
 
 	<spawner name="WanderingHorde"> 
-		<gamestage stage="1"><spawn group="ZombiesAll" num="7" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="5"><spawn group="ZombiesAll" num="8" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="10"><spawn group="ZombiesAll" num="9" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="15"><spawn group="ZombiesAll2" num="10" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="20"><spawn group="ZombiesAll2" num="11" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="25"><spawn group="ZombiesAll2" num="12" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="35"><spawn group="ZombiesNight" num="13" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="45"><spawn group="ZombiesNight" num="14" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="55"><spawn group="ZombiesNight" num="15" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="65"><spawn group="ZombiesNight2" num="16" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="75"><spawn group="ZombiesNight2" num="17" maxAlive="20" duration="09"/></gamestage>
-		<gamestage stage="85"><spawn group="ZombiesNight2" num="18" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="100"><spawn group="ZombiesWasteland" num="19" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="120"><spawn group="ZombiesWasteland" num="20" maxAlive="25" duration="09"/></gamestage>
-		<gamestage stage="140"><spawn group="ZombiesWasteland" num="21" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="160"><spawn group="ZombiesWastelandNight" num="21" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="180"><spawn group="ZombiesWastelandNight" num="22" maxAlive="35" duration="09"/></gamestage>
-		<gamestage stage="200"><spawn group="ZombiesWastelandNight" num="22" maxAlive="35" duration="09"/></gamestage>
-		<gamestage stage="220"><spawn group="ZombiesWastelandNight2" num="23" maxAlive="40" duration="09"/></gamestage>
-		<gamestage stage="240"><spawn group="ZombiesWastelandNight2" num="23" maxAlive="40" duration="09"/></gamestage>
-		<gamestage stage="260"><spawn group="ZombiesWastelandNight2" num="24" maxAlive="45" duration="09"/></gamestage>
-		<gamestage stage="280"><spawn group="ZombiesWastelandNight3" num="24" maxAlive="45" duration="09"/></gamestage>
-		<gamestage stage="300"><spawn group="ZombiesWastelandNight3" num="25" maxAlive="50" duration="09"/></gamestage>
-		<gamestage stage="330"><spawn group="ZombiesWastelandNight3" num="25" maxAlive="50" duration="09"/></gamestage>
-		<gamestage stage="360"><spawn group="ZombiesWastelandNight4" num="26" maxAlive="55" duration="09"/></gamestage>
-		<gamestage stage="390"><spawn group="ZombiesWastelandNight4" num="26" maxAlive="55" duration="09"/></gamestage>
-		<gamestage stage="420"><spawn group="ZombiesWastelandNight4" num="27" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="450"><spawn group="ZombiesWastelandNight5" num="27" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="480"><spawn group="ZombiesWastelandNight5" num="28" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="510"><spawn group="ZombiesWastelandNight5" num="28" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="540"><spawn group="ZombiesWastelandNight6" num="29" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="570"><spawn group="ZombiesWastelandNight6" num="29" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="600"><spawn group="ZombiesWastelandNight6" num="30" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="650"><spawn group="ZombiesWastelandNight6" num="30" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="700"><spawn group="ZombiesWastelandNight7" num="31" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="750"><spawn group="ZombiesWastelandNight7" num="31" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1"><spawn group="ZombiesAll" num="21" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombiesAll" num="22" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombiesAll2" num="23" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombiesAll2" num="24" maxAlive="40" duration="09"/></gamestage>
+		<gamestage stage="35"><spawn group="ZombiesNight" num="25" maxAlive="40" duration="09"/></gamestage>
+		<gamestage stage="45"><spawn group="ZombiesNight" num="26" maxAlive="40" duration="09"/></gamestage>
+		<gamestage stage="65"><spawn group="ZombiesNight2" num="27" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="75"><spawn group="ZombiesNight2" num="28" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="100"><spawn group="ZombiesWasteland" num="29" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="120"><spawn group="ZombiesWasteland" num="30" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="160"><spawn group="ZombiesWastelandNight" num="31" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="180"><spawn group="ZombiesWastelandNight" num="32" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="220"><spawn group="ZombiesWastelandNight2" num="32" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="240"><spawn group="ZombiesWastelandNight2" num="32" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="280"><spawn group="ZombiesWastelandNight3" num="32" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="300"><spawn group="ZombiesWastelandNight3" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="360"><spawn group="ZombiesWastelandNight4" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="390"><spawn group="ZombiesWastelandNight4" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="450"><spawn group="ZombiesWastelandNight5" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="480"><spawn group="ZombiesWastelandNight5" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="540"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="570"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="600"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="700"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="750"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
 		<gamestage stage="800"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="850"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
 		<gamestage stage="900"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
 		<gamestage stage="950"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
 		<gamestage stage="1000"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>

@@ -1511,8 +1511,21 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="treasureAmmo">
-	<item group="groupAmmoRegular" count="2,4"/>
-	<item group="groupAmmoAdvanced" count="3,6" prob=".4"/>
+	<item name="ammo9mmBulletBall" count="50" prob="1"/>
+	<item name="ammo9mmBulletHP" count="25" prob="0.5"/>
+	<item name="ammo9mmBulletAP" count="25" prob="0.5"/>
+	<item name="ammo44MagnumBulletBall" count="50" prob="1"/>
+	<item name="ammo44MagnumBulletHP" count="25" prob="0.5"/>
+	<item name="ammo44MagnumBulletAP" count="25" prob="0.5"/>
+	<item name="ammoShotgunShell" count="50" prob="1"/>
+	<item name="ammoShotgunSlug" count="25" prob="0.5"/>
+	<item name="ammo762mmBulletBall" count="50" prob="1"/>
+	<item name="ammo762mmBulletHP" count="25" prob="0.5"/>
+	<item name="ammo762mmBulletAP" count="25" prob="0.5"/>
+	<item name="ammoArrowFlaming" count="15" prob="0.5"/>
+	<item name="ammoCrossbowBoltFlaming" count="15" prob="0.35"/>
+	<item name="ammoArrowExploding" count="10" prob="0.35"/>
+	<item name="ammoCrossbowBoltExploding" count="10" prob="0.25"/>
 </lootgroup>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -2377,13 +2390,13 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="rareFoodDrink">
-	<item name="drinkJarGrandpasAwesomeSauce"/>
-	<item name="drinkJarGrandpasLearningElixir"/>
-	<item name="drinkJarGrandpasMoonshine"/>
-	<item name="foodShamChowder"/>
-	<item name="foodHoboStew"/>
-	<item name="drinkJarBlackStrapCoffee"/>
-	<item name="drinkCanMegaCrush"/>
+	<item name="drinkJarGrandpasAwesomeSauce" count="1,2" prob="0.25"/>
+	<item name="drinkJarGrandpasLearningElixir" count="1,2" prob="0.25"/>
+	<item name="drinkJarGrandpasMoonshine" count="1,2" prob="0.25"/>
+	<item name="foodShamChowder" count="2,4" prob="0.5"/>
+	<item name="foodHoboStew" count="2,4" prob="0.5"/>
+	<item name="drinkJarBlackStrapCoffee" count="2,4" prob="0.5"/>
+	<item name="drinkCanMegaCrush" count="2,4" prob="0.5"/>
 </lootgroup>
 
 <lootgroup name="schematicsElectrical">
@@ -2713,7 +2726,6 @@ The overall plan for loot distribution:
 	<item group="booksAllScaled"  prob="0.4"/>
 	<item group="seeds"  prob="0.35"/>
 	<item group="groupQuestChallenge" prob="0.11"/> 	<!-- 0.06 = .23 % -->
-	<item group="groupTreasureMaps" prob="0.092"/>
 	<item name="resourceBone" count="1,5" prob="0.25"/>
 	<item name="resourceScrapPolymers" count="1,5" prob="0.35"/>
 	<item name="resourceLockPick" count="1,5" prob="0.35"/>
@@ -2742,10 +2754,10 @@ The overall plan for loot distribution:
 	<item name="resourceOil" count="1,4"/>
 	<item name="resourceSpring" count="1,4"/>
 	<item group="rareAutomotive"/>
-	<item name="meleeToolScrapIronFireaxe" prob="0.25"/>
-	<item name="meleeToolScrapIronPickaxe" prob="0.25"/>
-	<item name="meleeToolScrapIronShovel" prob="0.25"/>
-	<item name="meleeToolScrapWrench" prob="0.25"/>
+	<item name="meleeToolScrapIronFireaxe" prob="0.35"/>
+	<item name="meleeToolScrapIronPickaxe" prob="0.35"/>
+	<item name="meleeToolScrapIronShovel" prob="0.35"/>
+	<item name="meleeToolScrapWrench" prob="0.35"/>
 	<item name="meleeToolFlashlight02" prob="0.05" />
 	<item name="resourceElectricParts" count="1,4" prob="0.3"/>
 	<item name="resourceMechanicalParts" count="1,4" prob="0.3"/>
@@ -2775,10 +2787,10 @@ The overall plan for loot distribution:
 <lootgroup name="groupToolsT0" loot_quality_template="QLTemplateT0">
 	<item name="meleeToolRepairT0StoneAxe"/>
 	<item name="meleeToolShovelT0StoneShovel"/>
-	<item name="meleeToolScrapIronFireaxe" prob="0.35"/>
-	<item name="meleeToolScrapIronPickaxe" prob="0.35"/>
-	<item name="meleeToolScrapIronShovel" prob="0.35"/>
-	<item name="meleeToolScrapWrench" prob="0.35"/>
+	<item name="meleeToolScrapIronFireaxe" prob="0.45"/>
+	<item name="meleeToolScrapIronPickaxe" prob="0.45"/>
+	<item name="meleeToolScrapIronShovel" prob="0.45"/>
+	<item name="meleeToolScrapWrench" prob="0.45"/>
 </lootgroup>
 
 <lootgroup name="groupToolsT1" loot_quality_template="QLTemplateT1">
@@ -2838,10 +2850,6 @@ The overall plan for loot distribution:
 	<item name="resourceForgedSteel" count="1,3" prob=".5"/>
 	<item name="resourceScrapPolymers" count="10,25" prob=".4"/>
 	<item group="electricalDevices" prob="1"/>
-	<item name="meleeToolScrapIronFireaxe" prob="0.35" loot_quality_template="QLTemplateT0"/>
-	<item name="meleeToolScrapIronPickaxe" prob="0.35" loot_quality_template="QLTemplateT0"/>
-	<item name="meleeToolScrapIronShovel" prob="0.35" loot_quality_template="QLTemplateT0"/>
-	<item name="meleeToolScrapWrench" prob="0.35" loot_quality_template="QLTemplateT0"/>
 	<item name="resourceMechanicalParts" count="1,9" prob="1"/>
 	<item name="meleeToolPaintTool" prob="0.4"/>
 	<item name="meleeToolWireTool"/>
@@ -2893,7 +2901,7 @@ The overall plan for loot distribution:
 	<item name="apparelNerdGlasses" prob=".7"/>
 	<item name="apparelSkiGoggles" prob=".7"/>
 	<item name="apparelAviatorGoggles" prob=".7"/>
-	<item name="apparelNightvisionGoggles"  prob="0.35"/>
+	<item name="apparelNightvisionGoggles"  prob="0.125"/>
 	<item group="groupApparelHats"/>
 	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
 	<item name="apparelWornBoots"/>
@@ -3452,6 +3460,15 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="thrownTimedCharge" count="3" loot_prob_template="QuestT3Prob"/>
 </lootgroup>
 
+<lootgroup name="groupTreasurethrown">
+    <item name="thrownAmmoPipeBomb" count="3,4" prob="1"/>
+	<item name="thrownDynamite" count="1,2" prob="0.5"/>
+	<item name="thrownAmmoMolotovCocktail" count="3,4" prob="1"/>
+	<item name="thrownGrenade" count="2,3" prob="0.75"/>
+	<item name="thrownGrenadeContact" count="2,3" prob="0.75"/>
+	<item name="thrownTimedCharge" count="1,2" prob="0.5"/>
+</lootgroup>
+
 <lootgroup name="groupQuestArmorT1" loot_quality_template="questT1QualTemplate">
 	<item name="armorLeatherBoots"/>
 	<item name="armorLeatherPants"/>
@@ -3497,6 +3514,12 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="drugFortBites" count="1,2" loot_prob_template="QuestT2Prob"/>
 	<item name="drugPainkillers" count="3,6" prob="1.75"/>
 	<item name="toolBeaker" loot_prob_template="QuestT2Prob"/>
+</lootgroup>
+
+<lootgroup name="groupTreasureMedical">
+	<item name="medicalFirstAidBandage" count="1,5" prob="1"/>
+	<item name="medicalFirstAidKit" count="1,3" prob="0.75"/>
+	<item name="drugPainkillers" count="1,5" prob="1"/>
 </lootgroup>
 
 <lootgroup name="groupQuestSchematics">
@@ -3571,8 +3594,8 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupWeaponsAllScaled" prob=".7"/>
 	<item group="groupModAllScaled" prob=".175"/>
 	<!-- <item group="groupAmmoAdvanced"/> -->
-	<item name="oldCash" count="10,250" prob="0.075"/>
-	<item group="rareOres" prob="0.05"/>
+	<item name="oldCash" count="10,250" prob="0.1"/>
+	<item group="rareOres" prob="0.075"/>
 </lootgroup>
 
 <lootgroup name="groupAmmoPileLootSub">
@@ -3604,27 +3627,22 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupAmmoRegularT0" count="1" prob=".05"/>
 </lootgroup>
 
-<lootgroup name="groupBuriedLootStashTreasureSub" count="0,3">
-	<item group="groupWeaponsAllScaledTPlus" prob="0.5"/>
-	<item group="groupArmorScaledTPlus" prob="0.65"/>
-	<item group="rareOres" count="5,10" prob="0.35"/>
-	<item name="oldCash" count="250,1000" prob="0.6"/>
-	<item group="groupModAllScaled" prob="1.2"/>
-	<item group="groupArmorScaled" prob="1.2"/>
-	<item group="rareFoodDrink" count="1,2"/>
-	<item group="groupQuestWeapons" count="1,2"/>
-	<item group="groupQuestMedical" count="1,2"/>
+<lootgroup name="groupBuriedLootStashTreasureSub" count="3,6">
+	<item group="groupWeaponsAllScaledTPlus"  count="2" prob="0.5"/>
+	<item group="groupArmorScaledTPlus" count="2" prob="0.5"/>
+	<item group="groupModAllScaled" count="2" prob="0.5"/>
+	<item group="groupArmorScaled" count="2" prob="0.5"/>
+	<item group="rareOres" count="5,10" prob="0.1"/>
+	<item name="oldCash" count="750,2500" prob="0.3"/>
 </lootgroup>
 
 <lootgroup name="groupBuriedLootStashTreasure" count="all">
-	<item group="treasureAmmo" count="1,2"/>
-	<item name="casinoCoin" count="2000,6000"/>
+	<item group="treasureAmmo" count="2,3"/>
+	<item name="casinoCoin" count="6000,12000"/>
 	<item group="groupBuriedLootStashTreasureSub"/>
-	<item group="groupModAllScaled" prob="1.2"/>
-	<item group="groupArmorScaled" prob="1.2"/>
 	<item group="rareFoodDrink" count="1,2"/>
-	<item group="groupQuestWeapons" count="2,3"/>
-	<item group="groupQuestMedical" count="1,2"/>
+    <item group="groupTreasurethrown" count="2,3"/>
+	<item group="groupTreasureMedical" count="2,3"/>
 </lootgroup>
 
 <!--
@@ -3921,7 +3939,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- military munitions ammo box -->
-<lootcontainer id="40" count="2,3" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="40" count="2,3" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2.5" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob=".7" count="2,4"/>
 	<item group="groupWeaponsAllScaled" prob=".35"/>
 	<item group="groupModAllScaled" prob=".25"/>
@@ -4635,13 +4653,14 @@ treasureTemplate
 	<item group="booksAllScaled" prob="0.25"/>
 	<item name="resourceForgedIron" count="1,2" prob="0.25"/>
 	<item group="groupToolsTiered" prob="0.25"/>
+	<item group="groupToolsT0" prob="0.25" loot_quality_template="QLTemplateT0"/>
 	<item group="groupArmorScaled" prob="0.35"/>
 	<item group="junk" prob="0.85"/>
 	<item group="groupAmmoRegular" count="1" prob="0.35"/>
 	<item group="groupWeaponsAllScaled" prob="0.25"/>
-	<item name="oldCash" count="1,25" prob="0.35"/>
+	<item name="oldCash" count="1,6" prob="0.35"/>
 	<item group="rareMedicine" count="1,2" prob="0.05"/>
-	<item group="groupQuestChallenge" prob="0.2"/>
+	<item group="groupQuestChallenge" prob="0.025"/>
 </lootcontainer>
 
 <!-- EntityLootContainerRegular, rare random drop off strong zombies -->
@@ -4649,13 +4668,14 @@ treasureTemplate
 	<item group="booksAllScaled" prob="0.35"/>
 	<item name="resourceForgedIron" count="2,3" prob="0.35"/>
 	<item group="groupToolsTiered" prob="0.35"/>
+	<item group="groupToolsT0" prob="0.35" loot_quality_template="QLTemplateT0"/>
 	<item group="groupArmorScaled" prob="0.45"/>
 	<item group="groupAmmoRegular" count="1" prob="0.45"/>
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
-	<item name="oldCash" count="25,50" prob="0.45"/>
+	<item name="oldCash" count="6,12" prob="0.45"/>
 	<item group="junk" prob="0.75"/>
 	<item group="rareMedicine" count="3,4" prob="0.1"/>
-	<item group="groupQuestChallenge" prob="0.3"/>
+	<item group="groupQuestChallenge" prob="0.05"/>
 	<item group="groupModAllScaled" prob="0.2"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
 
@@ -4667,16 +4687,16 @@ treasureTemplate
 	<item name="resourceForgedSteel" count="1,2" prob="0.35"/>
 	<item name="resourceForgedIron" count="3,4" prob="0.45"/>
 	<item group="groupToolsTiered" prob="0.45"/>
+	<item group="groupToolsT0" prob="0.45" loot_quality_template="QLTemplateT0"/>
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="1" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.45"/>
-	<item name="oldCash" count="50,100" prob="0.55"/>
+	<item name="oldCash" count="12,25" prob="0.55"/>
 	<item group="junk" prob="0.65"/>
 	<item group="rareMedicine" count="1,2" prob="0.15"/>
 	<item name="drugVitamins" count="1,2" prob="0.1"/>
 	<item name="drugSteroids" count="1" prob="0.05"/>
-	<item group="groupTreasureMaps" prob="0.1"/>
-	<item group="groupQuestChallenge" prob="0.35"/>
+	<item group="groupQuestChallenge" prob="0.1"/>
 	<item group="groupModAllScaled" prob="0.55"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
 
@@ -4691,13 +4711,13 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="2" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
-	<item name="apparelNightvisionGoggles" prob="0.1"/>
-	<item name="oldCash" count="100,150" prob="0.75"/>
+	<item name="apparelNightvisionGoggles" prob="0.025"/>
+	<item name="oldCash" count="25,37" prob="0.75"/>
 	<item group="rareMedicine" count="1,2" prob="0.35"/>
 	<item name="drugVitamins" count="1,2" prob="0.25"/>
 	<item name="drugSteroids" count="1" prob="0.15"/>
-	<item group="groupTreasureMaps" prob="0.25"/>
-	<item group="groupQuestChallenge" prob="0.45"/>
+	<item group="groupTreasureMaps" prob="0.025"/>
+	<item group="groupQuestChallenge" prob="0.1"/>
 	<item group="rareOres" prob="0.125"/>
 	<item group="groupModAllScaled" prob="0.35"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
@@ -4714,11 +4734,11 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.45"/>
 	<item group="groupAmmoRegular" count="3" prob="0.45"/>
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
-	<item name="apparelNightvisionGoggles" prob="0.15"/>
-	<item name="oldCash" count="150,250" prob="0.45"/>
+	<item name="apparelNightvisionGoggles" prob="0.0375"/>
+	<item name="oldCash" count="37,62" prob="0.45"/>
 	<item group="rareMedicine" count="2,3" prob="0.35"/>
-	<item group="groupTreasureMaps" prob="0.35"/>
-	<item group="groupQuestChallenge" prob="0.45"/>
+	<item group="groupTreasureMaps" prob="0.0375"/>
+	<item group="groupQuestChallenge" prob="0.15"/>
 	<item group="rareOres" prob="0.25"/>
 	<item group="groupModAllScaled" prob="0.45"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
@@ -4734,11 +4754,11 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.55"/>
 	<item group="groupAmmoRegular" count="3" prob="0.5"/>
 	<item group="groupWeaponsAllScaled" prob="0.4"/>
-	<item name="apparelNightvisionGoggles" prob="0.2"/>
-	<item name="oldCash" count="250,500" prob="0.45"/>
+	<item name="apparelNightvisionGoggles" prob="0.05"/>
+	<item name="oldCash" count="62,125" prob="0.45"/>
 	<item group="rareMedicine" count="2,3" prob="0.35"/>
-	<item group="groupTreasureMaps" prob="0.35"/>
-	<item group="groupQuestChallenge" prob="0.45"/>
+	<item group="groupTreasureMaps" prob="0.05"/>
+	<item group="groupQuestChallenge" prob="0.2"/>
 	<item group="rareOres" prob="0.25"/>
 	<item group="groupModAllScaled" prob="0.35"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>
@@ -4754,11 +4774,11 @@ treasureTemplate
 	<item group="groupArmorScaled" prob="0.6"/>
 	<item group="groupAmmoRegular" count="4" prob="0.55"/>
 	<item group="groupWeaponsAllScaled" prob="0.5"/>
-	<item name="apparelNightvisionGoggles" prob="0.25"/>
-	<item name="oldCash" count="500,1000" prob="0.55"/>
+	<item name="apparelNightvisionGoggles" prob="0.0625"/>
+	<item name="oldCash" count="125,250" prob="0.55"/>
 	<item group="rareMedicine" count="3,4" prob="0.45"/>
-	<item group="groupTreasureMaps" prob="0.45"/>
-	<item group="groupQuestChallenge" prob="0.55"/>
+	<item group="groupTreasureMaps" prob="0.0625"/>
+	<item group="groupQuestChallenge" prob="0.25"/>
 	<item group="rareOres" prob="0.35"/>
 	<item group="groupModAllScaled" prob="0.5"/>
 	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0"/>

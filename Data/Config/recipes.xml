@@ -1393,91 +1393,91 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <!-- Candy crafting -->
 
 <recipe name="drugCovertCats" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"   craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugAtomJunkies" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"   craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugEyeKandy" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"   craft_time="90" craft_exp_gain="50">
-    <ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+    <ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugHackers" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">	
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugHealthBar" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugJailBreakers" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugNerdTats" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugOhShitzDrops" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <recipe name="drugRockBusters" count="1" craft_area="campfire"  craft_tool="toolBeaker" tags="perkMasterChef,learnable" craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 
 <recipe name="drugSkullCrushers" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 
 <recipe name="drugSugarButts" count="1" craft_area="campfire" craft_tool="toolBeaker" tags="perkMasterChef,learnable"  craft_time="90" craft_exp_gain="50">
-	<ingredient name="foodRottingFlesh" count="2"/>
-	<ingredient name="resourceAnimalFat" count="3"/>
-	<ingredient name="resourceScrapPolymers" count="2"/>
-	<ingredient name="resourceDuctTape" count="1"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="foodRottingFlesh" count="4"/>
+	<ingredient name="resourceAnimalFat" count="6"/>
+	<ingredient name="resourceScrapPolymers" count="4"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="drinkJarBoiledWater" count="2"/>
 	</recipe>
 	
 <!--******-->

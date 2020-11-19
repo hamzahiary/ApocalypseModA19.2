@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+    <append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,eggboiled,bowlFruit,soupChunkyBeef,soupChicken,soupLamb,bowlChili,bowlMiso,soupPea,bowlPasta,bowlSoup,bowlStock,creamedCorn,soupMushroom,warmsoupChunkyBeef,warmsoupChicken,mealBreakfast,mealDinner,grillSteak,Hamburger,Omelet,scrambledEggs,warmsoupLamb,warmbowlChili,warmbowlMiso,warmsoupPea,warmbowlPasta,warmbowlSoup,warmbowlStock,honeyHam,scrambledEggs,Omelet,baconEggSandwich,grillSteak,Hamburger,mealBreakfast,mealDinner,steakSandwich,honeyHam,meadBlueberry</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,vegetableStew,canChunkyMeatStew,canMeatStew,canVegetableStew,stewChunkyMeat,steakSandwich</append>
+
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,meatStew,Mead,baconEggSandwich</append>
+	
+
+		
+	
+</configs>

@@ -501,7 +501,6 @@
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="266"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- walker damage -->
 	</effect_group>
 </entity_class>
@@ -535,7 +534,7 @@
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="532"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -572,13 +571,13 @@
 		<passive_effect name="HealthMax" operation="base_set" value="1010"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieWight" extends="zombieWightFeral">
+<entity_class name="MutatedzombieWight" extends="zombieWightFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFeralRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
@@ -609,14 +608,14 @@
 		<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2020"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="30"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieWightBoss" extends="zombieWightRadiated">
+<entity_class name="legendaryzombieWight" extends="zombieWightRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
@@ -648,9 +647,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="4040"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="80"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -737,7 +736,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="285"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -758,10 +757,10 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="541"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -789,7 +788,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieBoe" extends="zombieBoeFeral">
+<entity_class name="MutatedzombieBoe" extends="zombieBoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<!--<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>-->
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDFeralRagdoll.prefab"/>
@@ -809,14 +808,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1082"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="21"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieBoeBoss" extends="zombieBoeRadiated">
+<entity_class name="legendaryzombieBoe" extends="zombieBoeRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBoeHDRadiatedRagdoll.prefab"/>
 
@@ -833,10 +832,10 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2164"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="43"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="32.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -934,11 +933,11 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/> <!-- base_set does not work here. Because reasons -->
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/> <!-- base_set does not work here. Because reasons -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieFootballPlayer" extends="zombieFootballPlayerFeral">
+<entity_class name="MutatedzombieFootballPlayer" extends="zombieFootballPlayerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFootballRagdoll.prefab"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
@@ -968,8 +967,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1066,7 +1065,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="570"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1086,9 +1085,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="902"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1114,7 +1113,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieFemaleFat" extends="zombieFemaleFatFeral">
+<entity_class name="MutatedzombieFemaleFat" extends="zombieFemaleFatFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBigMamaHDFeralRagdoll.prefab"/>
 
@@ -1133,14 +1132,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1804"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieFemaleFatBoss" extends="zombieFemaleFatRadiated">
+<entity_class name="legendaryzombieFemaleFat" extends="zombieFemaleFatRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBigMamaHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -1156,9 +1155,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="3608"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="54"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1225,7 +1224,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="285"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1245,9 +1244,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="541"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="11"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1273,7 +1272,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieJoe" extends="zombieJoeFeral">
+<entity_class name="MutatedzombieJoe" extends="zombieJoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardJoeHDFeralRagdoll.prefab"/>
 
@@ -1292,14 +1291,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1082"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="21"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieJoeBoss" extends="zombieJoeRadiated">
+<entity_class name="legendaryzombieJoe" extends="zombieJoeRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardJoeHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -1315,9 +1314,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2164"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="43"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="32.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1386,7 +1385,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="312"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1406,9 +1405,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="625"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1434,7 +1433,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieJanitor" extends="zombieJanitorFeral">
+<entity_class name="MutatedzombieJanitor" extends="zombieJanitorFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMechanicHDFeralRagdoll.prefab"/>
 
@@ -1450,14 +1449,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1250"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="25"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieJanitorBoss" extends="zombieJanitorRadiated">
+<entity_class name="legendaryzombieJanitor" extends="zombieJanitorRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMechanicHDRadiatedRagdoll.prefab"/>
 
@@ -1474,8 +1473,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="37.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -1566,7 +1565,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="475"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1585,9 +1584,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="902"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1612,7 +1611,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieMoe" extends="zombieMoeFeral">
+<entity_class name="MutatedzombieMoe" extends="zombieMoeFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMoeHDFeralRagdoll.prefab"/>
 
@@ -1629,14 +1628,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1804"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="34"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="25.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieMoeBoss" extends="zombieMoeRadiated">
+<entity_class name="legendaryzombieMoe" extends="zombieMoeRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMoeHDRadiatedRagdoll.prefab"/>
 
@@ -1653,9 +1652,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="3608"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="68"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="51"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1744,7 +1743,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="250"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -1764,9 +1763,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="451"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1792,7 +1791,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieArlene" extends="zombieArleneFeral">
+<entity_class name="MutatedzombieArlene" extends="zombieArleneFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardArleneHDFeralRagdoll.prefab"/>
 
@@ -1808,14 +1807,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="902"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieArleneBoss" extends="zombieArleneRadiated">
+<entity_class name="legendaryzombieArlene" extends="zombieArleneRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardArleneHDRadiatedRagdoll.prefab"/>
 	
@@ -1833,8 +1832,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1804"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -1889,7 +1888,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="237"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 	</effect_group>
 </entity_class>
 
@@ -1909,9 +1908,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="451"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -1938,7 +1937,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantZombieLab" extends="zombieLabFeral">
+<entity_class name="MutatedZombieLab" extends="zombieLabFeral">
 	<property name="Tags" value="entity,zombie,walker,Feral"/>
 	<property name="HandItem" value="meleeHandZombieFeral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
@@ -1953,13 +1952,13 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="902"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieLabBoss" extends="zombieLabRadiated">
+<entity_class name="legendaryzombieLab" extends="zombieLabRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardLabRagdoll.prefab"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
@@ -1975,8 +1974,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1804"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2029,7 +2028,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="250"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2049,14 +2048,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="10"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="7.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieScreamer" extends="zombieScreamerFeral">
+<entity_class name="MutatedzombieScreamer" extends="zombieScreamerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -2073,14 +2072,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieScreamerBoss" extends="zombieScreamerRadiated">
+<entity_class name="legendaryzombieScreamer" extends="zombieScreamerRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/screamer_radiated.mat"/>
 
@@ -2097,8 +2096,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="30"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -2181,7 +2180,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="247"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2201,8 +2200,8 @@
 		<passive_effect name="HealthMax" operation="base_set" value="461"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2227,7 +2226,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieDarlene" extends="zombieDarleneFeral">
+<entity_class name="MutatedzombieDarlene" extends="zombieDarleneFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDarleneHDFeralRagdoll.prefab"/>
 
@@ -2244,14 +2243,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="922"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieDarleneBoss" extends="zombieDarleneRadiated">
+<entity_class name="legendaryzombieDarlene" extends="zombieDarleneRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDarleneHDRadiatedRagdoll.prefab"/>
 
@@ -2268,8 +2267,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1844"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -2351,7 +2350,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="259"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2370,9 +2369,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="471"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2397,7 +2396,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieMarlene" extends="zombieMarleneFeral">
+<entity_class name="MutatedzombieMarlene" extends="zombieMarleneFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMarleneHDFeralRagdoll.prefab"/>
 
@@ -2414,14 +2413,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="942"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieMarleneBoss" extends="zombieMarleneRadiated">
+<entity_class name="legendaryzombieMarlene" extends="zombieMarleneRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardMarleneHDRadiatedRagdoll.prefab"/>
 
@@ -2438,8 +2437,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1884"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="37"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -2509,7 +2508,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="285"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2528,9 +2527,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="550"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="11"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2555,7 +2554,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieYo" extends="zombieYoFeral">
+<entity_class name="MutatedzombieYo" extends="zombieYoFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardYoHDFeralRagdoll.prefab"/>
 
@@ -2571,14 +2570,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieYoBoss" extends="zombieYoRadiated">
+<entity_class name="legendaryzombieYo" extends="zombieYoRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardYoHDRadiatedRagdoll.prefab"/>
 
@@ -2595,8 +2594,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2200"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="44"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="33"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -2667,7 +2666,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="362"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2688,8 +2687,8 @@
 		<passive_effect name="HealthMax" operation="base_set" value="574"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="11"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2715,7 +2714,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieSteve" extends="zombieSteveFeral">
+<entity_class name="MutatedzombieSteve" extends="zombieSteveFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSteveHDFeralRagdoll.prefab"/>
 
@@ -2733,14 +2732,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1148"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieSteveBoss" extends="zombieSteveRadiated">
+<entity_class name="legendaryzombieSteve" extends="zombieSteveRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSteveHDRadiatedRagdoll.prefab"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -2756,9 +2755,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2296"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="45"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="33.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -2789,7 +2788,7 @@
 	<!-- Gameplay -->
 	<property name="ExperienceGain" value="313"/> <!-- XP grunt -->
 	<property name="CanClimbLadders" value="false"/>
-	<property name="HandItem" value="meleeHandZombie02"/>
+	<property name="HandItem" value="meleeHandZombieCop"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="125"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
@@ -2797,14 +2796,15 @@
 </entity_class>
 
 <entity_class name="zombieSteveCrawlerFeral" extends="zombieSteveCrawler">
-	<property name="Tags" value="entity,zombie"/>
+	<property name="Tags" value="entity,zombie,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCrawlerHDFeralRagdoll.prefab"/>
 	<property name="WalkType" value="6"/>
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".6"/><!-- Feral -->
-	<property name="HandItem" value="meleeHandZombie02Feral"/>
-
+	<property name="HandItem" value="meleeHandZombieCopWeakRadiated"/>
+	<property name="MoveSpeed" value="0.75"/>
+	<property name="MoveSpeedAggro" value=".6, 1.3"/>
 	<property name="ExperienceGain" value="625"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value=".15"/> <!-- Feral -->
 
@@ -2875,7 +2875,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="340"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		 <passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		 <passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -2892,9 +2892,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="555"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="11"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.25"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 	</effect_group>
 </entity_class>
 
@@ -2915,7 +2915,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieBusinessMan" extends="zombieBusinessManFeral">
+<entity_class name="MutatedzombieBusinessMan" extends="zombieBusinessManFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSuitHDFeralRagdoll.prefab"/>
 
@@ -2933,15 +2933,15 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1110"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->		
-        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16.5"/>
          <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="ZombieBusinessManBoss" extends="ZombieBusinessManRadiated">
+<entity_class name="legendaryZombieBusinessMan" extends="ZombieBusinessManRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardSuitHDRadiatedRagdoll.prefab"/>
 	<property name="HandItem" value="meleeHandZombieCopBoss"/>
@@ -2954,9 +2954,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2220"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="44"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="33"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 	</effect_group>
 </entity_class>
 
@@ -3039,12 +3039,12 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="570"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieSnow" extends="zombieSnowFeral">
+<entity_class name="MutatedzombieSnow" extends="zombieSnowFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,Giant"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -3062,8 +3062,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1140"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -3206,7 +3206,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="450"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -3227,10 +3227,10 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="760"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="11.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -3258,7 +3258,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieSpider" extends="zombieSpiderFeral">
+<entity_class name="MutatedzombieSpider" extends="zombieSpiderFeral">
 	<property name="Tags" value="entity,zombie,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -3277,14 +3277,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1520"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieSpiderBoss" extends="zombieSpiderRadiated">
+<entity_class name="legendaryzombieSpider" extends="zombieSpiderRadiated">
 	<property name="Tags" value="entity,zombie,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/spiderzombie_radiated.mat"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
@@ -3301,10 +3301,10 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="3040"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="45"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -3403,7 +3403,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="350"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" buff="buffBurningWeapon">
 			<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
@@ -3413,7 +3413,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieBurnt" extends="zombieBurntFeral">
+<entity_class name="MutatedzombieBurnt" extends="zombieBurntFeral">
 	<property name="Tags" value="entity,zombie,walker,Feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/ZombieStandardBurntRagdoll.prefab"/>
 	<property name="WalkType" value="7"/>
@@ -3441,8 +3441,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="700"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="14"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="10.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<!--
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" buff="buffBurningWeapon">
@@ -3530,12 +3530,12 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="325"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieNurse" extends="zombieNurseFeral">
+<entity_class name="MutatedzombieNurse" extends="zombieNurseFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -3553,9 +3553,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="650"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9.75"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -3644,11 +3644,11 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="570"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieFatHawaiian" extends="zombieFatHawaiianFeral">
+<entity_class name="MutatedombieFatHawaiian" extends="zombieFatHawaiianFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -3666,9 +3666,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1140"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="22"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
@@ -3824,7 +3824,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
@@ -3860,8 +3860,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
@@ -3898,7 +3898,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieFatCop" extends="zombieFatCopFeral">
+<entity_class name="MutatedzombieFatCop" extends="zombieFatCopFeral">
 	<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -3922,15 +3922,15 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="30"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieFatCopBoss" extends="zombieFatCopRadiated">
+<entity_class name="legendaryzombieFatCop" extends="zombieFatCopRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/cop_rad.mat"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/rad_eye.mat"/>
@@ -3954,9 +3954,9 @@
 		<passive_effect name="HealthMax" operation="base_set" value="4000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="80"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
 </entity_class>
@@ -4019,10 +4019,11 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="440"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+		 <passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieMaleHazmat" extends="zombieMaleHazmatFeral">
+<entity_class name="MutatedzombieMaleHazmat" extends="zombieMaleHazmatFeral">
 	<property name="Tags" value="entity,zombie,walker,Feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardHazmatRagdoll.prefab"/>
 	<property name="WalkType" value="7"/>
@@ -4042,9 +4043,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="880"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="17"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12.75"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
@@ -4126,7 +4127,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="450"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -4144,9 +4145,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="900"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13.5"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 	</effect_group>
 </entity_class>
 
@@ -4168,7 +4169,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieUtilityWorker" extends="zombieUtilityWorkerFeral">
+<entity_class name="MutatedzombieUtilityWorker" extends="zombieUtilityWorkerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardWorkerHDFeralRagdoll.prefab"/>
 
@@ -4185,13 +4186,13 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1800"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="ZombieUtilityWorkerBoss" extends="ZombieUtilityWorkerRadiated">
+<entity_class name="legendaryZombieUtilityWorker" extends="ZombieUtilityWorkerRadiated">
 	<property name="Tags" value="entity,zombie,walker,Feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardWorkerHDRadiatedRagdoll.prefab"/>
 	<property name="HandItem" value="meleeHandZombieCopBoss"/>
@@ -4203,9 +4204,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="3600"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> 
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="54"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 	</effect_group>
 </entity_class>
 
@@ -4314,7 +4315,7 @@
 		<passive_effect name="HealthMax" operation="base_set" value="900"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -4346,7 +4347,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieSoldier" extends="zombieSoldierFeral">
+<entity_class name="MutatedzombieSoldier" extends="zombieSoldierFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -4364,14 +4365,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1800"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieSoldierBoss" extends="zombieSoldierRadiated">
+<entity_class name="legendaryzombieSoldier" extends="zombieSoldierRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/soldier_Zombie_radiated.mat"/>
@@ -4393,7 +4394,7 @@
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -4434,7 +4435,7 @@
 	<property name="Explosion.EntityDamage" value="375"/>
 	<property name="Explosion.DamageBonus.earth" value=".1"/>
 	<property name="StompsSpikes" value="true"/>
-	<property name="ExplodeDelay" value="3"/>
+	<property name="ExplodeDelay" value="4"/>
 	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
 	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 	<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
@@ -4447,7 +4448,7 @@
 		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
 </entity_class>
@@ -4486,7 +4487,7 @@
 	<property name="Explosion.EntityDamage" value="250"/>
 	<property name="Explosion.DamageBonus.earth" value=".1"/>
 	<property name="StompsSpikes" value="true"/>
-	<property name="ExplodeDelay" value="5"/>
+	<property name="ExplodeDelay" value="3"/>
 	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
 	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 	<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
@@ -4500,7 +4501,7 @@
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
 </entity_class>
@@ -4539,7 +4540,7 @@
 	<property name="Explosion.EntityDamage" value="550"/>
 	<property name="Explosion.DamageBonus.earth" value=".1"/>
 	<property name="StompsSpikes" value="true"/>
-	<property name="ExplodeDelay" value="3"/>
+	<property name="ExplodeDelay" value="5"/>
 	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
 	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 	<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
@@ -4552,14 +4553,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieDemolitionBoss" extends="zombieDemolitionFeral">
+<entity_class name="legendaryzombieDemolition" extends="zombieDemolitionFeral">
 	<property name="Tags" value="entity,zombie,walker,Feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardDemolitionRagdoll.prefab"/>
 	<property name="Class" value="EntityZombieCop"/>
@@ -4593,7 +4594,7 @@
 	<property name="Explosion.EntityDamage" value="800"/>
 	<property name="Explosion.DamageBonus.earth" value=".1"/>
 	<property name="StompsSpikes" value="true"/>
-	<property name="ExplodeDelay" value="2"/>
+	<property name="ExplodeDelay" value="6"/>
 	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
 	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
 	<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
@@ -4606,7 +4607,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="4000"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="80"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
 		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
@@ -4674,7 +4675,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="340"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -4693,9 +4694,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="680"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9.75"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -4720,7 +4721,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieSkateboarder" extends="zombieSkateboarderFeral">
+<entity_class name="MutatedzombieSkateboarder" extends="zombieSkateboarderFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -4738,14 +4739,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1360"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="27"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20.25"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieSkateboarderBoss" extends="zombieSkateboarderRadiated">
+<entity_class name="legendaryzombieSkateboarder" extends="zombieSkateboarderRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/hoodieZombie_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -4760,9 +4761,9 @@
 		<passive_effect name="HealthMax" operation="base_set" value="2720"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="54"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40.5"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 	</effect_group>
 </entity_class>
 
@@ -4841,7 +4842,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="300"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -4860,9 +4861,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="600"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -4887,7 +4888,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieCheerleader" extends="zombieCheerleaderFeral">
+<entity_class name="MutatedzombieCheerleader" extends="zombieCheerleaderFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -4905,14 +4906,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1200"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="24"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="18"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieCheerleaderBoss" extends="zombieCheerleaderRadiated">
+<entity_class name="legendaryzombieCheerleader" extends="zombieCheerleaderRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/cheerleaderZombie_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -4927,9 +4928,9 @@
 		<passive_effect name="HealthMax" operation="base_set" value="2400"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="48"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="36"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 	</effect_group>
 </entity_class>
 
@@ -4986,7 +4987,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="270"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -5005,9 +5006,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="540"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -5032,7 +5033,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieOldTimer" extends="zombieOldTimerFeral">
+<entity_class name="MutatedzombieOldTimer" extends="zombieOldTimerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/feral_eye.mat"/>
 
@@ -5050,14 +5051,14 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1080"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="21"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15.75"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieOldTimerBoss" extends="zombieOldTimerRadiated">
+<entity_class name="legendaryzombieOldTimer" extends="zombieOldTimerRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/oldTimer_radiated.mat"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
@@ -5073,9 +5074,9 @@
 		<passive_effect name="HealthMax" operation="base_set" value="2160"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="43"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="32.25"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
 	</effect_group>
 </entity_class>
 
@@ -5135,7 +5136,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="532"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 	</effect_group>
 </entity_class>
 
@@ -5152,8 +5153,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1010"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="15"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -5175,7 +5176,7 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieBiker" extends="zombieBikerFeral">
+<entity_class name="MutatedzombieBiker" extends="zombieBikerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDFeralRagdoll.prefab"/>
 
@@ -5192,13 +5193,13 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="2020"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="30"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
-<entity_class name="zombieBikerBoss" extends="zombieBikerRadiated">
+<entity_class name="legendaryzombieBiker" extends="zombieBikerRadiated">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardBikerHDRadiatedRagdoll.prefab"/>
 	<property name="HandItem" value="meleeHandZombieCopBoss"/>
@@ -5211,8 +5212,8 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="4040"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="80"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"/>
 		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 	</effect_group>
 </entity_class>
@@ -5276,12 +5277,12 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="325"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieFarmer" extends="zombieFarmerFeral">
+<entity_class name="MutatedzombieFarmer" extends="zombieFarmerFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardFarmerRagdoll.prefab"/>
 	<property name="WalkType" value="6"/>
@@ -5302,9 +5303,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="650"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="13"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9.75"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -5358,12 +5359,12 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="400"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
 
-<entity_class name="GiantzombieStripper" extends="zombieStripperFeral">
+<entity_class name="MutatedzombieStripper" extends="zombieStripperFeral">
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCocktailWaitressFeralHDRagdoll.prefab"/>
 
@@ -5380,9 +5381,9 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="800"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="16"/>
+        <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="12"/>
         <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
@@ -5449,7 +5450,7 @@
 	<property name="ExperienceGain" value="245"/>
 	<!-- <property name="CorpseBlock" value="goreBlockAnimal"/><property name="CorpseBlockChance" value="0"/> -->
 	<property name="TimeStayAfterDeath" value="300"/>
-	<property name="DeadBodyHitPoints" value="350"/>
+	<property name="DeadBodyHitPoints" value="50"/>
 
 	<property name="NavObject" value="animaltracking_timid" />
 
@@ -5489,13 +5490,14 @@
 	<property name="MoveSpeedPanic" value="1.6"/>
 	<property name="ExperienceGain" value="245"/>
 	<property name="TimeStayAfterDeath" value="300"/>
+	 <property name="DeadBodyHitPoints" value="100"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/> <!-- this triggers the special harvesting animation like on the knife -->
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalStag -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="9"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="7"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/> <!-- animalStag -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5512,12 +5514,13 @@
 	<property name="Mass" value="110"/>
 
 	<!-- Gameplay -->
+	<property name="DeadBodyHitPoints" value="50"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="20"/> <!-- animalStag -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="6"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalStag -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5556,13 +5559,13 @@
 	<property name="MoveSpeedPanic" value="1.55"/>
 
 	<property name="ExperienceGain" value="130"/>
-	<property name="DeadBodyHitPoints" value="175"/>
+	<property name="DeadBodyHitPoints" value="10"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalRabbit -->
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalRabbit -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5596,12 +5599,12 @@
 	<!-- Gameplay -->
 	<property name="MoveSpeedPanic" value="1.3"/>
 	<property name="ExperienceGain" value="130"/>
-	<property name="DeadBodyHitPoints" value="175"/>
+	<property name="DeadBodyHitPoints" value="10"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalChicken -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="23"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalChicken -->
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5763,15 +5766,15 @@
 
 	<!-- Gameplay -->
 	<property name="PainResistPerHit" value="1"/>
-	<property name="ExperienceGain" value="4000"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="600"/>
-	<property name="SizeScale" value="1.1"/>
+	<property name="ExperienceGain" value="3200"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="1600"/>
+	<property name="SizeScale" value="1.2"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="20"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="20"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="30"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="10"/>
 	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5799,7 +5802,7 @@
 	<property name="PhysicsBody" value="bear"/>
 	<property name="Mass" value="600"/>
 	<property name="Mesh" value="Animals/Bear/animalBearStandardRagdoll"/>
-	<property name="SizeScale" value="0.95"/>
+	<property name="SizeScale" value="0.9"/>
 
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="DestroyArea"/>
@@ -5826,14 +5829,14 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandAnimalBearCup"/>
 	<property name="PainResistPerHit" value="0.5"/>
-	<property name="ExperienceGain" value="2000"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="600"/>
+	<property name="ExperienceGain" value="1600"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="800"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/> <!-- animalBear -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="12"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="7"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
 	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="1"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5893,14 +5896,14 @@
 
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandAnimalZombieBear"/>
-    <property name="SizeScale" value="1.1"/>
-	<property name="ExperienceGain" value="5000"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="600"/>
+    <property name="SizeScale" value="1.2"/>
+	<property name="ExperienceGain" value="4000"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="2000"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="50"/> <!-- animalZombieBear -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="20"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="20"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="25"/> <!-- animalZombieBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
 	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5918,7 +5921,7 @@
 	<property name="ReplaceMaterial0" value="Entities/Animals/Bear/Materials/zBear"/>
 	<property name="ReplaceMaterial1" value="Materials/UMAFur_ZombieBear"/>
 	<!--<property name="AddFurToMaterial" param1="zBear" param2="Materials/UMAFur_ZombieBear"/>-->
-    <property name="SizeScale" value="0.95"/>
+    <property name="SizeScale" value="0.9"/>
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="DestroyArea"/>
 	<property name="AITask-3" value="Territorial"/>
@@ -5936,14 +5939,14 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandAnimalZombieBearCup"/>
 
-	<property name="ExperienceGain" value="2500"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="600"/>
+	<property name="ExperienceGain" value="2000"/> <!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="1000"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="25"/> <!-- animalZombieBear -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="12"/> <!-- animalZombieBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
 	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="1"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -5998,6 +6001,7 @@
 	<!-- Gameplay -->
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
 	<property name="ExperienceGain" value="500"/> <!-- XP grunt -->
+	<property name="DeadBodyHitPoints" value="200"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="200"/>
@@ -6005,11 +6009,11 @@
 	</effect_group>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/> <!-- animalWolf -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalWolf -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6062,6 +6066,7 @@
 	<property name="ExperienceGain" value="1250"/> <!-- XP grunt -->
 	<property name="SizeScale" value="1.25"/>
 	<property name="PainResistPerHit" value=".4"/>
+	<property name="DeadBodyHitPoints" value="500"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="500"/>
@@ -6069,10 +6074,10 @@
 	</effect_group>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalWolf -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="20"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="20"/> <!-- animalWolf -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="20"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6113,7 +6118,7 @@
 
 	<property name="HandItem" value="meleeHandAnimalCoyote"/>
 	<property name="ExperienceGain" value="206"/>
-	<property name="DeadBodyHitPoints" value="200"/>
+	<property name="DeadBodyHitPoints" value="100"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="100"/>
@@ -6122,11 +6127,11 @@
 	</effect_group>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="12"/>
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="7"/>
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6137,7 +6142,7 @@
 <entity_class name="animalDireWolf" extends="animalWolf">
 	<property name="Mass" value="180"/>
 	<property name="Prefab" value="/Entities/Animals/Wolf/animalStandardWolfRagdoll"/>
-	<property name="SizeScale" value="1.4"/>
+
 	<property name="ReplaceMaterial1" value="entities/animals/wolf/materials/wolfEyeFeral"/>
 
 	<property name="AITask-1" value="BreakBlock"/>
@@ -6156,15 +6161,15 @@
 	<property name="MoveSpeedAggro" value="1, 1.1"/>
 	<property name="HandItem" value="meleeHandAnimalDireWolf"/>
 	<property name="PainResistPerHit" value=".9"/>
-
+	<property name="SizeScale" value="1.2"/>
 	<property name="ExperienceGain" value="1250"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="DeadBodyHitPoints" value="500"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="35"/> <!-- animalDireWolf -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="12"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="3"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/> <!-- animalDireWolf -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="7"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="7"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6198,16 +6203,16 @@
 	<property name="MoveSpeedAggro" value="1, 1.1"/>
 	<property name="HandItem" value="meleeHandAnimalGiantDireWolf"/>
 	<property name="PainResistPerHit" value=".9"/>
-	<property name="SizeScale" value="1.25"/>
+	<property name="SizeScale" value="1.4"/>
 
 	<property name="ExperienceGain" value="2500"/> <!-- XP strong -->
-	<property name="DeadBodyHitPoints" value="450"/>
+	<property name="DeadBodyHitPoints" value="1000"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="60"/> <!-- animalDireWolf -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="24"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalDireWolf -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="16"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="8"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6215,7 +6220,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 		<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 
 	<property name="NavObject" value="animaltracking_direwolf,clear_sleeper" />
@@ -6258,13 +6263,13 @@
 	<property name="JumpDelay" value=".1"/>
 	<property name="JumpMaxDistance" value="6, 7"/>
 	<property name="PainResistPerHit" value=".8"/>
-
+    <property name="DeadBodyHitPoints" value="500"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="25"/>
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6299,23 +6304,23 @@
 	<property name="SightRange" value="70"/>
 
 	<!-- Gameplay -->
-	<property name="ExperienceGain" value="75"/>
+	<property name="ExperienceGain" value="225"/>
 	<property name="MoveSpeed" value="1"/>
 	<property name="MoveSpeedAggro" value="2.1, 2.1"/> <!-- Used when player in vehicle -->
 	<property name="MaxTurnSpeed" value="190"/>
-
+	<property name="DeadBodyHitPoints" value="30"/>
 	<property name="HandItem" value="meleeHandAnimalZombieVulture"/>
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 
 	<property name="DismemberMultiplierLegs" value="0"/>
 	<property name="PainResistPerHit" value="-1"/> <!-- no pain -->
 
-	<property name="DeadBodyHitPoints" value="30"/>
+
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieVulture -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="30"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="10"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6353,23 +6358,23 @@
 	<property name="SightRange" value="70"/>
 
 	<!-- Gameplay -->
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="900"/>
 	<property name="MoveSpeed" value="1"/>
 	<property name="MoveSpeedAggro" value="2.1, 2.1"/> <!-- Used when player in vehicle -->
 	<property name="MaxTurnSpeed" value="190"/>
-
+	<property name="DeadBodyHitPoints" value="120"/>
 	<property name="HandItem" value="meleeHandAnimalGiantZombieVulture"/>
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 
 	<property name="DismemberMultiplierLegs" value="0"/>
 	<property name="PainResistPerHit" value="10"/> <!-- no pain -->
 
-	<property name="DeadBodyHitPoints" value="120"/>
+
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="8"/> <!-- animalZombieVulture -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="50"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="20"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6392,17 +6397,16 @@
 	<property name="MoveSpeed" value=".7"/>
 	<property name="MoveSpeedAggro" value="1.5, 1.5"/>
 	<property name="MaxTurnSpeed" value="150"/>
-
+    <property name="DeadBodyHitPoints" value="60"/>
 	<property name="HandItem" value="meleeHandAnimalZombieVultureRadiated"/>
 
-	<property name="ExperienceGain" value="150"/> <!-- XP grunt radiated -->
+	<property name="ExperienceGain" value="450"/> <!-- XP grunt radiated -->
 
-	<property name="DeadBodyHitPoints" value="200"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="6"/> <!-- animalZombieVultureRadiated -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="35"/>
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="20"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="60"/>
@@ -6424,17 +6428,16 @@
 	<property name="MoveSpeed" value=".7"/>
 	<property name="MoveSpeedAggro" value="1.5, 1.5"/>
 	<property name="MaxTurnSpeed" value="150"/>
-
+    <property name="DeadBodyHitPoints" value="240"/>
 	<property name="HandItem" value="meleeHandAnimalGiantZombieVultureRadiated"/>
 
-	<property name="ExperienceGain" value="600"/> <!-- XP grunt radiated -->
+	<property name="ExperienceGain" value="1800"/> <!-- XP grunt radiated -->
 
-	<property name="DeadBodyHitPoints" value="200"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/> <!-- animalZombieVultureRadiated -->
-	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="55"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="12"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="10"/>
+	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="12"/> <!-- animalZombieVultureRadiated -->
+	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="40"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="16"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="8"/>
 
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="240"/>
@@ -6487,6 +6490,7 @@
 	<property name="MoveSpeedPanic" value="1.5"/>
     <property name="ExperienceGain" value="500"/> <!-- XP grunt -->
 	<property name="HandItem" value="meleeHandAnimalZombieDog"/>
+	  <property name="DeadBodyHitPoints" value="200"/>
 
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
 	<property name="PainResistPerHit" value=".9"/>
@@ -6494,8 +6498,8 @@
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/> <!-- animalZombieDog -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="4"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6547,7 +6551,7 @@
 	<property name="MoveSpeedAggro" value="1.2, 1.3"/>
 	<property name="MoveSpeedPanic" value="1.5"/>
 	<property name="SizeScale" value="1.25"/>
-
+    <property name="DeadBodyHitPoints" value="650"/>
 	<property name="HandItem" value="meleeHandAnimalDireWolf"/>
 
 	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
@@ -6556,8 +6560,8 @@
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="20"/> <!-- animalZombieDog -->
 	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="8"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="30"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="8"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="20"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="10"/>
 	<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6566,8 +6570,7 @@
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="650"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-		<passive_effect name="PhysicalDamageResist" operation="base_set" value="40"/>
-		<passive_effect name="EntityDamage" operation="perc_add" value="0.75"/> <!-- Boss damage -->
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="30"/>
 	</effect_group>
 </entity_class>
 
@@ -6623,16 +6626,15 @@
 	<property name="HandItem" value="meleeHandAnimalSnake"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
 	<property name="AttackTimeoutNight" value="1.1"/>
-
+    <property name="DeadBodyHitPoints" value="10"/>
 	<property name="PainResistPerHit" value="-1"/> <!-- no pain -->
 
 	<property name="ExperienceGain" value="130"/>
-	<property name="DeadBodyHitPoints" value="150"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalSnake -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="3"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="5"/> <!-- animalSnake -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="3"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6673,15 +6675,15 @@
 	<property name="MoveSpeed" value="0.2"/>
 	<property name="MoveSpeedAggro" value="1.3, 1.3"/>
 	<property name="MoveSpeedPanic" value="1.6"/>
-
+    <property name="DeadBodyHitPoints" value="250"/>
 	<property name="HandItem" value="meleeHandAnimalWolf"/>
 
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="30"/> <!-- animalBoar -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="7"/>
-	<drop event="Harvest" name="resourceAnimalFat" count="4" tag="butcherHarvest"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/> <!-- animalBoar -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceAnimalFat" count="5" tag="butcherHarvest"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="8"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="4"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
@@ -6731,15 +6733,15 @@
 	<property name="MoveSpeed" value=".15"/>
 	<property name="MoveSpeedAggro" value=".7, .75"/>
 	<property name="MoveSpeedPanic" value="1.1"/>
-
+    <property name="DeadBodyHitPoints" value="2000"/>
 	<property name="HandItem" value="meleeHandBossGrace"/>
 
 	<property name="ExperienceGain" value="1200"/> <!-- XP strong -->
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="100"/> <!-- animalBoar -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="70"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="35"/> <!-- animalBoar -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="20"/>
 	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="20"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="50"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="20"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>

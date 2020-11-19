@@ -87,6 +87,8 @@
 	    <reward type="Item" id="medicalBandage" value="5"/>
 		<reward type="Item" id="drugPainkillers" value="2"/>
 		<reward type="Item" id="foodHoney" value="2"/>
+		<reward type="Item" id="armorMiningHelmet" value="1"/>
+		<reward type="Item" id="modArmorHelmetLight" value="1"/>
 		<reward type="SkillPoints" value="4" chainreward="true"/>
 		<!-- <reward type="ShowTip" value="whiteRiverCitizen" stage="aftercomplete"/> -->
 	</quest>
