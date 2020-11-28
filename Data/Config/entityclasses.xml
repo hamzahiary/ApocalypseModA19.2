@@ -490,7 +490,7 @@
 
 	<!-- Gameplay -->
 	<property name="MoveSpeedAggro" value=".5, 1.35"/>
-	<property name="HandItem" value="meleeHandZombieWeakCop"/>
+	<property name="HandItem" value="meleeHandZombieCop"/>
 	<property name="JumpMaxDistance" value="4.6, 5"/>
 
 	<property name="ExperienceGain" value="665"/> <!-- XP grunt -->
@@ -2788,7 +2788,7 @@
 	<!-- Gameplay -->
 	<property name="ExperienceGain" value="313"/> <!-- XP grunt -->
 	<property name="CanClimbLadders" value="false"/>
-	<property name="HandItem" value="meleeHandZombieCop"/>
+	<property name="HandItem" value="meleeHandZombieWeakCop"/>
 	<effect_group name="Base Effects">
 		<passive_effect name="HealthMax" operation="base_set" value="125"/>
 		<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
@@ -2802,9 +2802,7 @@
 	<!-- Gameplay -->
 	<property name="DismemberMultiplierHead" value=".5"/><property name="DismemberMultiplierArms" value=".5"/><property name="DismemberMultiplierLegs" value=".5"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".6"/><!-- Feral -->
-	<property name="HandItem" value="meleeHandZombieCopWeakRadiated"/>
-	<property name="MoveSpeed" value="0.75"/>
-	<property name="MoveSpeedAggro" value=".6, 1.3"/>
+	<property name="HandItem" value="meleeHandZombieCop"/>
 	<property name="ExperienceGain" value="625"/> <!-- XP grunt feral -->
 	<property name="LootDropProb" value=".15"/> <!-- Feral -->
 

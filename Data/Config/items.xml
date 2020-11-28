@@ -6338,7 +6338,7 @@ needed?
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="15"/>
+		<property name="DamageEntity" value="12.5"/>
 		<property name="DamageBlock" value="15"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -6382,7 +6382,7 @@ needed?
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="15"/>
+		<property name="DamageEntity" value="11.25"/>
 		<property name="DamageBlock" value="75"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Velocity" value="18"/>
@@ -6454,7 +6454,7 @@ needed?
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="10"/>
+		<property name="DamageEntity" value="7.5"/>
 		<property name="DamageBlock" value="50"/>
 		<property name="Explosion.ParticleIndex" value="7"/>
 		<property name="Velocity" value="18"/>
@@ -6480,7 +6480,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCop"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="30"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
@@ -6505,7 +6505,7 @@ needed?
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="DamageEntity" value="25"/>
+		<property name="DamageEntity" value="17.5"/>
 		<property name="DamageBlock" value="125"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
@@ -6533,7 +6533,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="40"/>
+		<property name="DamageEntity" value="30"/>
 		<property name="DamageBlock" value="40"/>
 	</property>
 	<property class="Action1">
@@ -6558,7 +6558,7 @@ needed?
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="22.5"/>
 		<property name="DamageBlock" value="225"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
@@ -6586,7 +6586,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="17.5"/>
 		<property name="DamageBlock" value="20"/>
 	</property>
 	<property class="Action1">
@@ -6611,7 +6611,7 @@ needed?
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="15"/>
 		<property name="DamageBlock" value="100"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
@@ -6639,7 +6639,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="50"/>
+		<property name="DamageEntity" value="35"/>
 		<property name="DamageBlock" value="50"/>
 	</property>
 	<property class="Action1">
@@ -6664,7 +6664,7 @@ needed?
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="DamageEntity" value="35"/>
+		<property name="DamageEntity" value="26.25"/>
 		<property name="DamageBlock" value="275"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>
@@ -6692,7 +6692,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopRadiated"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="60"/>
+		<property name="DamageEntity" value="40"/>
 		<property name="DamageBlock" value="60"/>
 	</property>
 	<property class="Action1">
@@ -6717,7 +6717,7 @@ needed?
 	<property name="Extends" value="ammoProjectileZombieVomit"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action1">
-		<property name="DamageEntity" value="45"/>
+		<property name="DamageEntity" value="30"/>
 		<property name="DamageBlock" value="325"/>
 		<property name="Velocity" value="18"/>
 		<property name="FlyTime" value="2"/>

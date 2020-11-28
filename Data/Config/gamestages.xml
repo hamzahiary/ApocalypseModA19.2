@@ -220,97 +220,145 @@ Console command: forcegamestage
 
 
 	<spawner name="WanderingHorde"> 
-		<gamestage stage="1"><spawn group="ZombiesAll" num="21" maxAlive="35" duration="09"/></gamestage>
-		<gamestage stage="5"><spawn group="ZombiesAll" num="22" maxAlive="35" duration="09"/></gamestage>
-		<gamestage stage="10"><spawn group="ZombiesAll2" num="23" maxAlive="35" duration="09"/></gamestage>
-		<gamestage stage="20"><spawn group="ZombiesAll2" num="24" maxAlive="40" duration="09"/></gamestage>
-		<gamestage stage="35"><spawn group="ZombiesNight" num="25" maxAlive="40" duration="09"/></gamestage>
-		<gamestage stage="45"><spawn group="ZombiesNight" num="26" maxAlive="40" duration="09"/></gamestage>
-		<gamestage stage="65"><spawn group="ZombiesNight2" num="27" maxAlive="45" duration="09"/></gamestage>
-		<gamestage stage="75"><spawn group="ZombiesNight2" num="28" maxAlive="45" duration="09"/></gamestage>
-		<gamestage stage="100"><spawn group="ZombiesWasteland" num="29" maxAlive="45" duration="09"/></gamestage>
-		<gamestage stage="120"><spawn group="ZombiesWasteland" num="30" maxAlive="50" duration="09"/></gamestage>
-		<gamestage stage="160"><spawn group="ZombiesWastelandNight" num="31" maxAlive="50" duration="09"/></gamestage>
-		<gamestage stage="180"><spawn group="ZombiesWastelandNight" num="32" maxAlive="50" duration="09"/></gamestage>
-		<gamestage stage="220"><spawn group="ZombiesWastelandNight2" num="32" maxAlive="55" duration="09"/></gamestage>
-		<gamestage stage="240"><spawn group="ZombiesWastelandNight2" num="32" maxAlive="55" duration="09"/></gamestage>
-		<gamestage stage="280"><spawn group="ZombiesWastelandNight3" num="32" maxAlive="55" duration="09"/></gamestage>
-		<gamestage stage="300"><spawn group="ZombiesWastelandNight3" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="360"><spawn group="ZombiesWastelandNight4" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="390"><spawn group="ZombiesWastelandNight4" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="450"><spawn group="ZombiesWastelandNight5" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="480"><spawn group="ZombiesWastelandNight5" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="540"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="570"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="600"><spawn group="ZombiesWastelandNight6" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="700"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="750"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="800"><spawn group="ZombiesWastelandNight7" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="900"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="950"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1000"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1100"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1200"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1300"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1400"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1500"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1600"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1700"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1800"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="1900"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2000"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2200"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2400"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2600"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2800"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="3000"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="2500"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
-		<gamestage stage="3000"><spawn group="ZombiesWastelandNight8" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1"><spawn group="wanderingHordeStage1" num="20" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="5"><spawn group="wanderingHordeStage1" num="20" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="10"><spawn group="wanderingHordeStage1" num="20" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="15"><spawn group="wanderingHordeStage2" num="21" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="20"><spawn group="wanderingHordeStage2" num="21" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="25"><spawn group="wanderingHordeStage3" num="21" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="30"><spawn group="wanderingHordeStage3" num="22" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="35"><spawn group="wanderingHordeStage4" num="22" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="40"><spawn group="wanderingHordeStage4" num="22" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="45"><spawn group="wanderingHordeStage5" num="23" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="50"><spawn group="wanderingHordeStage5" num="23" maxAlive="35" duration="09"/></gamestage>
+		<gamestage stage="60"><spawn group="wanderingHordeStage6" num="23" maxAlive="40" duration="09"/></gamestage>
+		<gamestage stage="70"><spawn group="wanderingHordeStage6" num="24" maxAlive="40" duration="09"/></gamestage>
+		<gamestage stage="80"><spawn group="wanderingHordeStage7" num="24" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="90"><spawn group="wanderingHordeStage7" num="24" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="100"><spawn group="wanderingHordeStage8" num="25" maxAlive="45" duration="09"/></gamestage>
+		<gamestage stage="110"><spawn group="wanderingHordeStage8" num="25" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="120"><spawn group="wanderingHordeStage9" num="26" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="130"><spawn group="wanderingHordeStage9" num="26" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="140"><spawn group="wanderingHordeStage10" num="27" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="150"><spawn group="wanderingHordeStage10" num="27" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="160"><spawn group="wanderingHordeStage11" num="28" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="170"><spawn group="wanderingHordeStage11" num="28" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="180"><spawn group="wanderingHordeStage11" num="29" maxAlive="50" duration="09"/></gamestage>
+		<gamestage stage="190"><spawn group="wanderingHordeStage12" num="29" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="200"><spawn group="wanderingHordeStage12" num="30" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="210"><spawn group="wanderingHordeStage13" num="30" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="220"><spawn group="wanderingHordeStage13" num="31" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="230"><spawn group="wanderingHordeStage14" num="31" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="240"><spawn group="wanderingHordeStage14" num="32" maxAlive="55" duration="09"/></gamestage>
+		<gamestage stage="250"><spawn group="wanderingHordeStage14" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="260"><spawn group="wanderingHordeStage15" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="270"><spawn group="wanderingHordeStage15" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="280"><spawn group="wanderingHordeStage16" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="290"><spawn group="wanderingHordeStage16" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="300"><spawn group="wanderingHordeStage17" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="320"><spawn group="wanderingHordeStage17" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="340"><spawn group="wanderingHordeStage18" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="360"><spawn group="wanderingHordeStage18" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="380"><spawn group="wanderingHordeStage19" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="400"><spawn group="wanderingHordeStage19" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="420"><spawn group="wanderingHordeStage20" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="440"><spawn group="wanderingHordeStage20" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="460"><spawn group="wanderingHordeStage21" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="480"><spawn group="wanderingHordeStage21" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="500"><spawn group="wanderingHordeStage22" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="530"><spawn group="wanderingHordeStage22" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="560"><spawn group="wanderingHordeStage23" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="590"><spawn group="wanderingHordeStage23" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="620"><spawn group="wanderingHordeStage24" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="650"><spawn group="wanderingHordeStage24" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="680"><spawn group="wanderingHordeStage25" num="32" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="710"><spawn group="wanderingHordeStage25" num="33" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="740"><spawn group="wanderingHordeStage26" num="33" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="770"><spawn group="wanderingHordeStage26" num="33" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="800"><spawn group="wanderingHordeStage27" num="33" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="850"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="900"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="950"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1000"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1200"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1400"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1600"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="1800"><spawn group="wanderingHordeStage27" num="34" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="2000"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="2200"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="2400"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="2600"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="2800"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
+		<gamestage stage="3000"><spawn group="wanderingHordeStage27" num="35" maxAlive="60" duration="09"/></gamestage>
 	</spawner>
 
 	<!-- spawners -->
 
-	<spawner name="AbandonedHouseHorde"> <!-- done. -->
+	<spawner name="AbandonedHouseHorde"> 
 		<gamestage stage="1"><spawn group="SleeperHStageGS1" num="1" maxAlive="2" duration="1"/></gamestage>
-		<gamestage stage="2"><spawn group="SleeperHStageGS2" num="1" maxAlive="3" duration="1"/></gamestage>
 		<gamestage stage="5"><spawn group="SleeperHStageGS5" num="3" maxAlive="5" duration="1"/></gamestage>
-		<gamestage stage="8"><spawn group="SleeperHStageGS8" num="4" maxAlive="6" duration="1"/></gamestage>
 		<gamestage stage="11"><spawn group="SleeperHStageGS11" num="6" maxAlive="8" duration="1"/></gamestage>
 		<gamestage stage="14"><spawn group="SleeperHStageGS14" num="7" maxAlive="10" duration="1"/></gamestage>
-		<gamestage stage="18"><spawn group="SleeperHStageGS18" num="9" maxAlive="11" duration="1"/></gamestage>
 		<gamestage stage="22"><spawn group="SleeperHStageGS22" num="11" maxAlive="12" duration="1"/></gamestage>
-		<gamestage stage="27"><spawn group="SleeperHStageGS27" num="14" maxAlive="12" duration="1"/></gamestage>
 		<gamestage stage="31"><spawn group="SleeperHStageGS31" num="16" maxAlive="3" duration="1"/></gamestage>
-		<gamestage stage="36"><spawn group="SleeperHStageGS36" num="19" maxAlive="3" duration="1"/></gamestage>
 		<gamestage stage="41"><spawn group="SleeperHStageGS41" num="20" maxAlive="4" duration="1"/></gamestage>
-		<gamestage stage="46"><spawn group="SleeperHStageGS46" num="21" maxAlive="4" duration="1"/></gamestage>
 		<gamestage stage="52"><spawn group="SleeperHStageGS52" num="22" maxAlive="5" duration="1"/></gamestage>
-		<gamestage stage="58"><spawn group="SleeperHStageGS58" num="23" maxAlive="5" duration="1"/></gamestage>
 		<gamestage stage="64"><spawn group="SleeperHStageGS64" num="24" maxAlive="6" duration="1"/></gamestage>
-		<gamestage stage="70"><spawn group="SleeperHStageGS70" num="25" maxAlive="6" duration="1"/></gamestage>
 		<gamestage stage="76"><spawn group="SleeperHStageGS76" num="25" maxAlive="7" duration="1"/></gamestage>
 		<gamestage stage="82"><spawn group="SleeperHStageGS82" num="25" maxAlive="7" duration="1"/></gamestage>
-		<gamestage stage="89"><spawn group="SleeperHStageGS89" num="26" maxAlive="8" duration="1"/></gamestage>
 		<gamestage stage="96"><spawn group="SleeperHStageGS96" num="26" maxAlive="8" duration="1"/></gamestage>
 		<gamestage stage="103"><spawn group="SleeperHStageGS103" num="26" maxAlive="9" duration="1"/></gamestage>
-		<gamestage stage="110"><spawn group="SleeperHStageGS110" num="17" maxAlive="9" duration="1"/></gamestage>
 		<gamestage stage="117"><spawn group="SleeperHStageGS117" num="17" maxAlive="10" duration="1"/></gamestage>
 		<gamestage stage="125"><spawn group="SleeperHStageGS125" num="17" maxAlive="11" duration="1"/></gamestage>
 		<gamestage stage="132"><spawn group="SleeperHStageGS132" num="17" maxAlive="11" duration="1"/></gamestage>
 		<gamestage stage="140"><spawn group="SleeperHStageGS140" num="17" maxAlive="12" duration="1"/></gamestage>
-		<gamestage stage="148"><spawn group="SleeperHStageGS148" num="17" maxAlive="12" duration="1"/></gamestage>
 		<gamestage stage="156"><spawn group="SleeperHStageGS156" num="17" maxAlive="13" duration="1"/></gamestage>
 		<gamestage stage="164"><spawn group="SleeperHStageGS164" num="17" maxAlive="14" duration="1"/></gamestage>
 		<gamestage stage="172"><spawn group="SleeperHStageGS172" num="18" maxAlive="14" duration="1"/></gamestage>
 		<gamestage stage="181"><spawn group="SleeperHStageGS181" num="18" maxAlive="15" duration="1"/></gamestage>
-		<gamestage stage="189"><spawn group="SleeperHStageGS189" num="18" maxAlive="16" duration="1"/></gamestage>
 		<gamestage stage="198"><spawn group="SleeperHStageGS198" num="18" maxAlive="16" duration="1"/></gamestage>
 		<gamestage stage="207"><spawn group="SleeperHStageGS207" num="18" maxAlive="17" duration="1"/></gamestage>
 		<gamestage stage="216"><spawn group="SleeperHStageGS216" num="18" maxAlive="18" duration="1"/></gamestage>
+		<gamestage stage="225"><spawn group="SleeperHStageGS225" num="18" maxAlive="19" duration="1"/></gamestage>
+		<gamestage stage="234"><spawn group="SleeperHStageGS234" num="18" maxAlive="19" duration="1"/></gamestage>
+		<gamestage stage="243"><spawn group="SleeperHStageGS243" num="18" maxAlive="20" duration="1"/></gamestage>
+		<gamestage stage="252"><spawn group="SleeperHStageGS252" num="19" maxAlive="21" duration="1"/></gamestage>
+		<gamestage stage="262"><spawn group="SleeperHStageGS262" num="19" maxAlive="21" duration="1"/></gamestage>
+		<gamestage stage="272"><spawn group="SleeperHStageGS272" num="19" maxAlive="22" duration="1"/></gamestage>
+		<gamestage stage="281"><spawn group="SleeperHStageGS281" num="19" maxAlive="23" duration="1"/></gamestage>
+		<gamestage stage="291"><spawn group="SleeperHStageGS291" num="19" maxAlive="24" duration="1"/></gamestage>
+		<gamestage stage="301"><spawn group="SleeperHStageGS301" num="19" maxAlive="25" duration="1"/></gamestage>
+		<gamestage stage="322"><spawn group="SleeperHStageGS322" num="19" maxAlive="26" duration="1"/></gamestage>
+		<gamestage stage="343"><spawn group="SleeperHStageGS343" num="20" maxAlive="28" duration="1"/></gamestage>
+		<gamestage stage="364"><spawn group="SleeperHStageGS364" num="20" maxAlive="30" duration="1"/></gamestage>
+		<gamestage stage="385"><spawn group="SleeperHStageGS385" num="20" maxAlive="31" duration="1"/></gamestage>
+		<gamestage stage="396"><spawn group="SleeperHStageGS396" num="20" maxAlive="32" duration="1"/></gamestage>
+		<gamestage stage="407"><spawn group="SleeperHStageGS407" num="20" maxAlive="33" duration="1"/></gamestage>
+		<gamestage stage="430"><spawn group="SleeperHStageGS430" num="21" maxAlive="35" duration="1"/></gamestage>
+		<gamestage stage="453"><spawn group="SleeperHStageGS453" num="21" maxAlive="37" duration="1"/></gamestage>
+		<gamestage stage="476"><spawn group="SleeperHStageGS476" num="21" maxAlive="39" duration="1"/></gamestage>
+		<gamestage stage="500"><spawn group="SleeperHStageGS500" num="22" maxAlive="41" duration="1"/></gamestage>
+		<gamestage stage="524"><spawn group="SleeperHStageGS524" num="22" maxAlive="42" duration="1"/></gamestage>
+		<gamestage stage="548"><spawn group="SleeperHStageGS548" num="22" maxAlive="44" duration="1"/></gamestage>
+		<gamestage stage="573"><spawn group="SleeperHStageGS573" num="22" maxAlive="46" duration="1"/></gamestage>
+		<gamestage stage="598"><spawn group="SleeperHStageGS598" num="23" maxAlive="48" duration="1"/></gamestage>
+		<gamestage stage="610"><spawn group="SleeperHStageGS610" num="23" maxAlive="49" duration="1"/></gamestage>
+		<gamestage stage="636"><spawn group="SleeperHStageGS636" num="23" maxAlive="51" duration="1"/></gamestage>
+		<gamestage stage="662"><spawn group="SleeperHStageGS662" num="23" maxAlive="53" duration="1"/></gamestage>
+		<gamestage stage="688"><spawn group="SleeperHStageGS688" num="24" maxAlive="56" duration="1"/></gamestage>
+		<gamestage stage="715"><spawn group="SleeperHStageGS715" num="24" maxAlive="58" duration="1"/></gamestage>
+		<gamestage stage="742"><spawn group="SleeperHStageGS742" num="24" maxAlive="60" duration="1"/></gamestage>
+		<gamestage stage="769"><spawn group="SleeperHStageGS769" num="25" maxAlive="62" duration="1"/></gamestage>
+		<gamestage stage="797"><spawn group="SleeperHStageGS797" num="25" maxAlive="64" duration="1"/></gamestage>
+		<gamestage stage="811"><spawn group="SleeperHStageGS811" num="25" maxAlive="65" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieBikerBarHorde"> <!-- done. -->
+	<spawner name="ZombieBikerBarHorde"> 
 		<gamestage stage="1"><spawn group="ZombieBikerBarGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombieBikerBarGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieBikerBarGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="ZombieBikerBarGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieBikerBarGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="ZombieBikerBarGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="ZombieBikerBarGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="ZombieBikerBarGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -326,8 +374,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="ZombieBikerBarGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieFootballStadiumHorde">  <!-- done. -->
+	<spawner name="ZombieFootballStadiumHorde">  
 		<gamestage stage="1"><spawn group="ZombieFootballStadiumGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombieFootballStadiumGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieFootballStadiumGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="ZombieFootballStadiumGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieFootballStadiumGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="ZombieFootballStadiumGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="ZombieFootballStadiumGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="ZombieFootballStadiumGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -343,8 +395,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="ZombieFootballStadiumGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieGhostTownHorde"> <!-- done. -->
+	<spawner name="ZombieGhostTownHorde"> 
 		<gamestage stage="1"><spawn group="ZombieGhostTownGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombieGhostTownGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieGhostTownGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="ZombieGhostTownGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieGhostTownGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="ZombieGhostTownGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="ZombieGhostTownGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="ZombieGhostTownGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -360,8 +416,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="ZombieGhostTownGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>		
 	</spawner>
 
-	<spawner name="HospitalHorde"> <!-- done. -->
+	<spawner name="HospitalHorde"> 
 		<gamestage stage="1"><spawn group="zombieHospitalGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieHospitalGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieHospitalGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieHospitalGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieHospitalGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieHospitalGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieHospitalGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieHospitalGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -377,8 +437,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieHospitalGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="LabWorkerHorde"> <!-- done. -->
+	<spawner name="LabWorkerHorde"> 
 		<gamestage stage="1"><spawn group="zombieLabWorkerGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieLabWorkerGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieLabWorkerGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieLabWorkerGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieLabWorkerGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieLabWorkerGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieLabWorkerGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieLabWorkerGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -394,8 +458,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieLabWorkerGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieSpiderOnlyHorde"> <!-- done. -->
+	<spawner name="ZombieSpiderOnlyHorde"> 
 		<gamestage stage="1"><spawn group="zombieSpiderGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieSpiderGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieSpiderGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieSpiderGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieSpiderGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieSpiderGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieSpiderGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieSpiderGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -411,8 +479,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieSpiderGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieSoldierHorde"> <!-- done. -->
+	<spawner name="ZombieSoldierHorde"> 
 		<gamestage stage="1"><spawn group="zombieSoldierGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieSoldierGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieSoldierGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieSoldierGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieSoldierGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieSoldierGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieSoldierGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieSoldierGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -428,8 +500,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieSoldierGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieHazMatOnlyHorde">  <!-- done. -->
+	<spawner name="ZombieHazMatOnlyHorde"> 
 		<gamestage stage="1"><spawn group="ZombieHazMatGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombieHazMatGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieHazMatGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="ZombieHazMatGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieHazMatGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="ZombieHazMatGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="ZombieHazMatGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="ZombieHazMatGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -445,8 +521,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="ZombieHazMatGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieUtilityWorkerHorde"> <!-- done. -->
+	<spawner name="ZombieUtilityWorkerHorde">
 		<gamestage stage="1"><spawn group="zombieUtilityWorkerGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieUtilityWorkerGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieUtilityWorkerGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieUtilityWorkerGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieUtilityWorkerGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieUtilityWorkerGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieUtilityWorkerGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieUtilityWorkerGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -462,8 +542,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieUtilityWorkerGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 	
-	<spawner name="ZombieJanitorOnlyHorde"> <!-- done. -->
+	<spawner name="ZombieJanitorOnlyHorde"> 
 		<gamestage stage="1"><spawn group="zombieJanitorGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieJanitorGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieJanitorGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieJanitorGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieJanitorGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieJanitorGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieJanitorGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieJanitorGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -479,8 +563,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieJanitorGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="SnowZombieHorde"> <!-- done. -->
+	<spawner name="SnowZombieHorde"> 
 		<gamestage stage="1"><spawn group="zombieSnowGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+	    <gamestage stage="5"><spawn group="zombieSnowGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieSnowGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieSnowGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieSnowGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieSnowGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieSnowGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieSnowGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -496,8 +584,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieSnowGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-    <spawner name="ZombieBusinessManHorde"> <!-- done. -->
+    <spawner name="ZombieBusinessManHorde"> 
 		<gamestage stage="1"><spawn group="zombieBusinessManGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieBusinessManGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieBusinessManGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieBusinessManGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieBusinessManGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieBusinessManGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieBusinessManGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieBusinessManGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -513,8 +605,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieBusinessManGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieFatCopHorde">  <!-- done. -->
+	<spawner name="ZombieFatCopHorde">  
 		<gamestage stage="1"><spawn group="zombieFatCopGroupGS1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="zombieFatCopGroupGS5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="zombieFatCopGroupGS10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="zombieFatCopGroupGS15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="zombieFatCopGroupGS20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="zombieFatCopGroupGS25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="zombieFatCopGroupGS50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="zombieFatCopGroupGS75" num="1" maxAlive="1" duration="1"/></gamestage>
@@ -530,8 +626,12 @@ Console command: forcegamestage
 		<gamestage stage="800"><spawn group="zombieFatCopGroupGS800" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
 
-	<spawner name="ZombieBurntHorde"> <!-- done. -->
+	<spawner name="ZombieBurntHorde"> 
 		<gamestage stage="1"><spawn group="ZombieBurntGroup1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="5"><spawn group="ZombieBurntGroup5" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieBurntGroup10" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="15"><spawn group="ZombieBurntGroup15" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieBurntGroup20" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="25"><spawn group="ZombieBurntGroup25" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="50"><spawn group="ZombieBurntGroup50" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="75"><spawn group="ZombieBurntGroup75" num="1" maxAlive="1" duration="1"/></gamestage>

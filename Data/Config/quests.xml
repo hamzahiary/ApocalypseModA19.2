@@ -978,7 +978,7 @@
 		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="1"/>-->
 		<!--<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="1"/>-->
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-		<!--<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="1"/>-->
+	    <reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
@@ -1040,6 +1040,7 @@
 
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
+		<reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1,2"/>
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
@@ -1342,10 +1343,9 @@
 		<reward type="Exp" value="3000"/>
 		<reward type="Item" id="casinoCoin" value="500"/>
 
-		<!--<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="1"/>-->
-		<!--<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="1"/>-->
+		
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" value="1"/>-->
+		<reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
@@ -1402,6 +1402,7 @@
 		<reward type="Exp" value="4500"/>
 		<reward type="Item" id="casinoCoin" value="1000"/>
 
+        <reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1,2"/>
@@ -1700,6 +1701,7 @@
 		<reward type="Exp" value="5060"/>
 		<reward type="Item" id="casinoCoin" value="1500"/>
 
+        <reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestWeapons" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1,2"/>
@@ -2021,9 +2023,8 @@
 		<reward type="Item" id="casinoCoin" value="350"/>
 
 		<reward type="LootItem" id="groupQuestMedical" ischosen="true" isfixed="true" value="1"/>
-		<!--<reward type="LootItem" id="groupQuestWeapons,groupQuestArmor" ischosen="true" isfixed="true" value="2"/>-->
+		<reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
-		<!--<reward type="LootItem" id="groupQuestTools" ischosen="true" value="2"/>-->
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
 		<reward type="LootItem" id="groupQuestAmmo,groupQuestMedical,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
@@ -2077,6 +2078,7 @@
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="casinoCoin" value="700"/>
 
+        <reward type="LootItem" id="groupTreasureMedical" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestWeapons,groupQuestArmor" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
