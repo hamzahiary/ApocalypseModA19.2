@@ -2723,7 +2723,7 @@ The overall plan for loot distribution:
 	<item name="resourceScrapBrass" count="25,150" prob="0.4"/>
 	<item name="resourceFeather" count="1,15"  prob="0.5"/>
 	<item name="resourceDuctTape" count="1,3"  prob="0.35"/>
-	<item group="booksAllScaled"  prob="0.4"/>
+	<item group="booksAllScaled"  prob="0.1"/>
 	<item group="seeds"  prob="0.35"/>
 	<item group="groupQuestChallenge" prob="0.11"/> 	<!-- 0.06 = .23 % -->
 	<item name="resourceBone" count="1,5" prob="0.25"/>
@@ -3036,7 +3036,7 @@ The overall plan for loot distribution:
 </lootgroup>
 
 <lootgroup name="labEquipment">
-	<item group="booksAllScaled"/>
+	<item group="booksAllScaled" prob="0.2"/>
 	<item name="resourceScrapPolymers" count="1,5"/>
 	<item name="drinkJarEmpty" count="1,10" prob="2"/>
 	<item name="drinkJarGrainAlcohol" count="1,5"/>
@@ -3709,7 +3709,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-<lootcontainer id="2" count="0" size="7,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="2" count="0" size="7,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
 	<item name="cobweb" count="0" prob="0.01"/>
 </lootcontainer>
 
@@ -3719,7 +3719,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- "bag" container that gets dropped when another loot container is destroyed -->
-<lootcontainer id="4" count="0" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="4" count="0" size="8,9" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
 	<item name="cobweb" count="1,2" prob="0"/>
 </lootcontainer>
 
@@ -3729,12 +3729,12 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- wallSafe / deskSafe -->
-<lootcontainer id="6" count="1,3" size="8,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="6" count="1,3" size="8,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="groupSafeLoot"/>
 </lootcontainer>
 
 <!-- gun safe -->
-<lootcontainer id="7" count="2,6" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="7" count="2,6" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="groupSafeLoot"/>
 </lootcontainer>
 
@@ -3754,7 +3754,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- backpack, place where people stash things, -->
-<lootcontainer id="9" count="1,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualPrimitiveItemsTemplate">
+<lootcontainer id="9" count="1,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.75" loot_quality_template="qualPrimitiveItemsTemplate">
 	<item group="backpacks/survival"/>
 </lootcontainer>
 
@@ -3778,7 +3778,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootcontainer id="12" count="0,2" size="6,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
 	<item group="junk"/>
 	<item group="groupAmmoRegular"/>
-	<item group="booksAllScaled" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.05"/>
 	<item group="dyes" prob="0.08"/>
 	<item name="meleeToolPaintTool" prob="0.04"/>
 </lootcontainer>
@@ -3801,7 +3801,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <lootcontainer id="15" count="0,2" size="6,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
 	<item group="junk"/>
 	<item group="groupAmmoRegular"/>
-	<item group="booksAllScaled" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.05"/>
 	<item group="dyes" prob="0.08"/>
 	<item name="meleeToolPaintTool" prob="0.05"/>
 </lootcontainer>
@@ -3823,7 +3823,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- cars-->
-<lootcontainer id="19" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="19" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="2" loot_quality_template="qualBaseTemplate">
 	<item group="automotive+tools+junk" count="1,4"/>
 </lootcontainer>
 
@@ -3929,17 +3929,17 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- Shamway Manager's Safe -->
-<lootcontainer id="38" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="38" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="shamwaySafe"/>
 </lootcontainer>
 
 <!-- Brew Master's Safe (unused) -->
-<lootcontainer id="39" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="39" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="brewerySafe"/>
 </lootcontainer>
 
 <!-- military munitions ammo box -->
-<lootcontainer id="40" count="2,3" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="2.5" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="40" count="2,3" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="1.25" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob=".7" count="2,4"/>
 	<item group="groupWeaponsAllScaled" prob=".35"/>
 	<item group="groupModAllScaled" prob=".25"/>
@@ -3971,7 +3971,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupApparelHats" prob="5"/>
 	<item group="groupArmorScaled" prob="2"/>
 	<item group="groupAmmoRegular" prob="0.02"/>
-	<item group="booksAllScaled" count="1,2"/>
+	<item group="booksAllScaled" count="1"/>
 	<item name="resourcePaper" count="2,8" prob="0.7"/>
 	<item name="oldCash" count="25,75" prob="0.3"/>
 	<item group="medicine" prob="0.05"/>
@@ -3982,7 +3982,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- file cabinet -->
 <lootcontainer id="44" count="1,2" size="6,2" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
 	<item group="groupAmmoRegular" prob="0.15"/>
-	<item group="booksAllScaled" prob="0.5"/>
+	<item group="booksAllScaled" prob="0.1"/>
 	<item name="resourcePaper" count="5,10"/>
 	<item name="oldCash" count="5,20" prob="0.3"/>
 	<item group="trophyGroup"/>
@@ -4012,8 +4012,8 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- purse -->
-<lootcontainer id="48" count="0,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
-	<item group="booksAllScaled" prob="0.1"/>
+<lootcontainer id="48" count="0,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.75" loot_quality_template="qualBaseTemplate">
+	<item group="booksAllScaled" prob="0.01"/>
 	<item group="cannedfood"/>
 	<item name="drinkJarBoiledWater"/>
 	<item group="medicine"/>
@@ -4025,7 +4025,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- bookcase -->
 <lootcontainer id="49" count="1,2" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="1,8" prob="0.06"/>
-	<item group="booksAllScaled" prob="0.07"/>
+	<item group="booksAllScaled" prob="0.04"/>
 </lootcontainer>
 
 <!-- shotgun Messiah -->
@@ -4107,7 +4107,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 <!-- Bookstore bookcase -->
 <lootcontainer id="60" count="1,2" size="6,2" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="1,8" prob="0.06"/>
-	<item group="booksAllScaled"  prob="0.07"/>
+	<item group="booksAllScaled"  prob="0.04"/>
 </lootcontainer>
 
 <!-- cntBuriedLootStashChest, treasure_taylor etc -->
@@ -4148,7 +4148,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item name="foodRottingFlesh" count="1,2" prob="2"/>
 	<item name="resourceBone" count="4,12" prob="1"/>
 	<item group="junk"/>
-	<item group="booksAllScaled" prob="0.1"/>
+	<item group="booksAllScaled" prob="0.05"/>
 	<item name="resourceGoldNugget" prob="0.05"/>
 </lootcontainer>
 
@@ -4164,11 +4164,11 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>
 
 <!-- cntFetchQuestSatchel  -->
-<lootcontainer id="72" count="0" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="72" count="0" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.75" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
 <!-- EntityLootContainerBandit -->
-<lootcontainer id="74" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="74" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
 <!-- bandit melee -->
 	<item group="banditsGeneral"/>
 	<item name="meleeWpnClubT0WoodenClub" prob="0.7"/>
@@ -4210,7 +4210,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>-->
 
 <!-- army truck-->
-<lootcontainer id="83" count="1,4" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="83" count="1,4" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="2" loot_quality_template="qualBaseTemplate">
 	<item group="groupWeaponsAllScaled" prob="0.275"/>
 	<item group="groupModAllScaled" prob="0.275"/> 
 	<item group="groupAmmoRegular" prob="0.325"/> 
@@ -4318,7 +4318,7 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 	<item group="groupWeaponsAllScaled" prob="0.35"/>
 	<item group="groupArmorScaled" prob="0.3"/>
 	<item group="groupModAllScaled" prob=".2"/>
-	<item group="booksAllScaled" count="1,2" prob="0.2"/>
+	<item group="booksAllScaled" count="1" prob="0.1"/>
 	<item group="booksRareOnlyScaled" count="1" prob="0.15"/>
 </lootcontainer>
 
@@ -4350,12 +4350,12 @@ if the loot entry for mods is empty then it will use the lootgroup mods and mod_
 </lootcontainer>-->
 
 <!-- cntWeaponsBagSmall -->
-<lootcontainer id="100" count="2,3" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="100" count="2,3" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.75" loot_quality_template="qualBaseTemplate">
 	<item group="groupWeaponsBagLoot"/>
 </lootcontainer>
 
 <!-- cntWeaponsBagLarge -->
-<lootcontainer id="101" count="3,4" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="101" count="3,4" size="6,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.75" loot_quality_template="qualBaseTemplate">
 	<item group="groupWeaponsBagLoot"/>
 </lootcontainer>
 
@@ -4386,7 +4386,7 @@ treasureTemplate
 </lootcontainer>
 
 <!-- Tool loot test -->
-<lootcontainer id="105" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="105" size="8,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualBaseTemplate">
 	<item group="toolTestLoot"/>
 </lootcontainer>
 
@@ -4484,7 +4484,7 @@ treasureTemplate
 </lootcontainer>
 
 <!-- cntHardenedChestSecure, hero, big, fancy chest -->
-<lootcontainer id="121" count="6,8" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="121" count="6,8" size="8,8" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="groupHeroChestLoot"/>
 </lootcontainer>
 
@@ -4584,14 +4584,14 @@ treasureTemplate
 <!-- cntBookPile01 etc. -->
 <lootcontainer id="135" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
 	<item name="resourcePaper" count="1,5" prob="0.06"/>
-	<item group="booksAllScaled" prob="0.07"/>
+	<item group="booksAllScaled" prob="0.04"/>
 	<item name="resourcePaper" count="1,5" prob="0.7"/><!-- temp fix for excessive use of lootable bookshelves instead of random placers -->
 </lootcontainer>
 
 <!-- cntBookShelfSingleBottomFull01 etc. -->
 <lootcontainer id="136" count="1,2" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
 	<item name="resourcePaper" count="1,5" prob="0.06"/>
-	<item group="booksAllScaled" prob="0.07"/>
+	<item group="booksAllScaled" prob="0.04"/>
 	<item name="resourcePaper" count="1,5" prob="0.07"/><!-- temp fix for excessive use of lootable bookshelves instead of random placers -->
 </lootcontainer>
 
@@ -4637,20 +4637,19 @@ treasureTemplate
 </lootcontainer>
 
 <!--Service Trucks TEMP LOOT TABLE-->
-<lootcontainer id="144" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="144" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="2" loot_quality_template="qualBaseTemplate">
 	<item group="workingStiffsBox"/>
 </lootcontainer>
 
 <!--Ambulance TEMP LOOT TABLE-->
-<lootcontainer id="145" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="145" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="2" loot_quality_template="qualBaseTemplate">
 	<item group="labEquipment" prob="16"/>
 	<item name="resourcePaper" count="5,15"/>
 </lootcontainer>
 
 
 <!-- EntityLootContainerWeak, rare random drop off regular zombies -->
-<lootcontainer id="146" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
-	<item group="booksAllScaled" prob="0.25"/>
+<lootcontainer id="146" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
 	<item name="resourceForgedIron" count="1,2" prob="0.25"/>
 	<item group="groupToolsTiered" prob="0.25"/>
 	<item group="groupToolsT0" prob="0.25" loot_quality_template="QLTemplateT0"/>
@@ -4664,8 +4663,7 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerRegular, rare random drop off strong zombies -->
-<lootcontainer id="147" count="2,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
-	<item group="booksAllScaled" prob="0.35"/>
+<lootcontainer id="147" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item name="resourceForgedIron" count="2,3" prob="0.35"/>
 	<item group="groupToolsTiered" prob="0.35"/>
 	<item group="groupToolsT0" prob="0.35" loot_quality_template="QLTemplateT0"/>
@@ -4682,8 +4680,8 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerWeakRad, rare random drop off bosses -->
-<lootcontainer id="148" count="3,4" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
-	<item group="booksAllScaled" prob="0.45"/>
+<lootcontainer id="148" count="2,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualPlus1Template">
+	<item group="booksAllScaled" prob="0.05"/>
 	<item name="resourceForgedSteel" count="1,2" prob="0.35"/>
 	<item name="resourceForgedIron" count="3,4" prob="0.45"/>
 	<item group="groupToolsTiered" prob="0.45"/>
@@ -4703,8 +4701,8 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerFeral, rare random drop off regular zombies -->
-<lootcontainer id="149" count="4,5" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
-	<item group="booksAllScaled" prob="0.45"/>
+<lootcontainer id="149" count="2,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
+	<item group="booksAllScaled" prob="0.10"/>
 	<item name="resourceForgedSteel" count="2,3" prob="0.35"/>
 	<item name="resourceForgedIron" count="4,5" prob="0.45"/>
 	<item group="groupToolsTiered" prob="0.45"/>
@@ -4725,9 +4723,9 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerRadiated, rare random drop off strong zombies -->
-<lootcontainer id="150" count="5,6" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="150" count="3,4" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="booksRareOnlyScaled" prob="0.25"/>
-	<item group="booksAllScaled" prob="0.45"/>
+	<item group="booksAllScaled" prob="0.15"/>
 	<item name="resourceForgedSteel" count="3,4" prob="0.35"/>
 	<item name="resourceForgedIron" count="5,6" prob="0.45"/>
 	<item group="groupToolsTiered" prob="0.45"/>
@@ -4745,9 +4743,9 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerMutated, rare random drop off bosses -->
-<lootcontainer id="151" count="6,7" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+<lootcontainer id="151" count="4,5" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualPlus1Template">
 	<item group="booksRareOnlyScaled" prob="0.35"/>
-	<item group="booksAllScaled" prob="0.45"/>
+	<item group="booksAllScaled" prob="0.20"/>
 	<item name="resourceForgedSteel" count="4,5" prob="0.45"/>
 	<item name="resourceForgedIron" count="6,7" prob="0.55"/>
 	<item group="groupToolsTiered" prob="0.55"/>
@@ -4765,9 +4763,9 @@ treasureTemplate
 </lootcontainer>
 
 <!-- EntityLootContainerBoss, rare random drop off regular zombies -->
-<lootcontainer id="152" count="7,8" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualBaseTemplate">
+<lootcontainer id="152" count="5,6" size="4,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.5" loot_quality_template="qualBaseTemplate">
 	<item group="booksRareOnlyScaled" prob="0.45"/>
-	<item group="booksAllScaled" prob="0.55"/>
+	<item group="booksAllScaled" prob="0.25"/>
 	<item name="resourceForgedSteel" count="5,6" prob="0.45"/>
 	<item name="resourceForgedIron" count="7,8" prob="0.55"/>
 	<item group="groupToolsTiered" prob="0.6"/>

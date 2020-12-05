@@ -1452,7 +1452,7 @@ Mesh files no longer used:
 	</property>
 
 	<effect_group name="meleeWpnBladeT0BoneKnife">
-		<passive_effect name="EntityDamage" operation="base_set" value="5.1" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT0BoneKnife -->
+		<passive_effect name="EntityDamage" operation="base_set" value="7.1" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT0BoneKnife -->
 		<passive_effect name="BlockDamage" operation="base_set" value="4" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="7.3" tags="primary"/>
@@ -1552,7 +1552,7 @@ Mesh files no longer used:
 	</property>
 
 	<effect_group name="meleeWpnBladeT1HuntingKnife">
-		<passive_effect name="EntityDamage" operation="base_set" value="6.1" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT1HuntingKnife -->
+		<passive_effect name="EntityDamage" operation="base_set" value="9.1" tags="perkDeepCuts,knife"/> <!-- meleeWpnBladeT1HuntingKnife -->
 		<passive_effect name="BlockDamage" operation="base_set" value="5.3" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="8.2" tags="primary"/>
@@ -1754,7 +1754,7 @@ Mesh files no longer used:
 		</property>
 	</property>
 	<effect_group name="meleeWpnBladeT3Machete">
-		<passive_effect name="EntityDamage" operation="base_set" value="19.8" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
+		<passive_effect name="EntityDamage" operation="base_set" value="20.8" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
 		<passive_effect name="BlockDamage" operation="base_set" value="21" tags="perkDeepCuts"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfBlows"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="19.2" tags="primary"/>
@@ -2899,7 +2899,7 @@ needed?
 	</property>
 
 	<effect_group name="meleeWpnSpearT0StoneSpear">
-		<passive_effect name="EntityDamage" operation="base_set" value="10.3" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT0StoneSpear -->
+		<passive_effect name="EntityDamage" operation="base_set" value="12.3" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT0StoneSpear -->
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.2"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkJavelinMaster"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster"/>
@@ -2947,7 +2947,7 @@ needed?
 	</property>
 
 	<effect_group name="meleeWpnSpearT1IronSpear">
-		<passive_effect name="EntityDamage" operation="base_set" value="12.4" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT1IronSpear -->
+		<passive_effect name="EntityDamage" operation="base_set" value="16.4" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT1IronSpear -->
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.2"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkJavelinMaster"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster"/>
@@ -2997,7 +2997,7 @@ needed?
 	</property>
 
 	<effect_group name="meleeWpnSpearT3SteelSpear">
-		<passive_effect name="EntityDamage" operation="base_set" value="18.6" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT3SteelSpear -->
+		<passive_effect name="EntityDamage" operation="base_set" value="24.6" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT3SteelSpear -->
 		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.3"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkJavelinMaster"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster"/>
@@ -3092,7 +3092,7 @@ needed?
 		</property>
 	</property>
 	<effect_group name="meleeWpnSledgeT0StoneSledgehammer">
-		<passive_effect name="EntityDamage" operation="base_set" value="17.5" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT0StoneSledgehammer -->
+		<passive_effect name="EntityDamage" operation="base_set" value="19.5" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT0StoneSledgehammer -->
 		<passive_effect name="BlockDamage" operation="base_set" value="27.2" tags="perkSkullCrusher"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkSkullCrusher"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="22.3" tags="primary"/>
@@ -3176,7 +3176,7 @@ needed?
 		</property>
 	</property>
 	<effect_group name="meleeWpnSledgeT1IronSledgehammer">
-		<passive_effect name="EntityDamage" operation="base_set" value="30.8" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT1IronSledgehammer -->
+		<passive_effect name="EntityDamage" operation="base_set" value="34.8" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT1IronSledgehammer -->
 		<passive_effect name="BlockDamage" operation="base_set" value="58.3" tags="perkSkullCrusher"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="34" tags="perkSkullCrusher"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="36.7" tags="primary"/>
@@ -3261,7 +3261,7 @@ needed?
 		</property>
 	</property>
 	<effect_group name="meleeWpnSledgeT3SteelSledgehammer">
-		<passive_effect name="EntityDamage" operation="base_set" value="46.2" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT3SteelSledgehammer -->
+		<passive_effect name="EntityDamage" operation="base_set" value="52.2" tags="perkSkullCrusher"/> <!-- meleeWpnSledgeT3SteelSledgehammer -->
 		<passive_effect name="BlockDamage" operation="base_set" value="85" tags="perkSkullCrusher"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="34" tags="perkSkullCrusher"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="40.5" tags="primary"/>
@@ -3438,7 +3438,7 @@ needed?
 		</property>
 	</property>
 	<effect_group name="meleeWpnKnucklesT1IronKnuckles">
-		<passive_effect name="EntityDamage" operation="base_set" value="13.5" tags="perkBrawler"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="15.5" tags="perkBrawler"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkBrawler"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkBrawler"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="9.6" tags="primary"/>
@@ -3504,7 +3504,7 @@ needed?
 	</property>
 
 	<effect_group name="meleeWpnKnucklesT3SteelKnuckles">
-		<passive_effect name="EntityDamage" operation="base_set" value="16.6" tags="perkBrawler"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="21.6" tags="perkBrawler"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="5.2" tags="perkBrawler"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkBrawler"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="10.2" tags="primary"/>
@@ -3926,7 +3926,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="50" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="18" tags="perkGunslinger,9mmGun"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="-11" tags="perkGunslinger"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-9" tags="perkGunslinger"/>
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="180" tags="perkGunslinger"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkGunslinger"/>
 
@@ -4289,7 +4289,7 @@ needed?
 	<effect_group name="gunShotgunT0Blunderbuss">
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="100" tags="perkBoomstick"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
-
+        <passive_effect name="EntityDamage" operation="base_add" value="-3" tags="perkBoomstick"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkBoomstick"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 3.9s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
@@ -4373,7 +4373,7 @@ needed?
 	<effect_group name="gunShotgunT1DoubleBarrel">
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="1000" tags="perkBoomstick"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
-		<passive_effect name="EntityDamage" operation="base_add" value="-5" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-1" tags="perkBoomstick"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="2" tags="perkBoomstick"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
@@ -4455,7 +4455,7 @@ needed?
 	<effect_group name="gunShotgunT2PumpShotgun">
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="60" tags="perkBoomstick"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
-		<passive_effect name="EntityDamage" operation="base_add" value="-3" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="2" tags="perkBoomstick"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="10" tags="perkBoomstick"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
@@ -4537,7 +4537,7 @@ needed?
 	<effect_group name="gunShotgunT3AutoShotgun">
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="70" tags="perkBoomstick"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
-		<passive_effect name="EntityDamage" operation="base_add" value="-1" tags="perkBoomstick"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="6" tags="perkBoomstick"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="15" tags="perkBoomstick"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
 		<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
@@ -4899,7 +4899,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="-20" tags="perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-15" tags="perkMachineGunner"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".07,.35" tier="2,6" tags="perkMachineGunner"/> <!-- tier bonus -->
@@ -4985,7 +4985,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="-17" tags="perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-12" tags="perkMachineGunner"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".08,.4" tier="2,6" tags="perkMachineGunner"/> <!-- tier bonus -->
@@ -5076,7 +5076,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="90" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="50" tags="perkMachineGunner"/>
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
-		<passive_effect name="EntityDamage" operation="base_add" value="-14" tags="perkMachineGunner"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="-9" tags="perkMachineGunner"/>
 
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".09,.45" tier="2,6" tags="perkMachineGunner"/> <!-- tier bonus -->
@@ -5263,7 +5263,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 
-		<passive_effect name="EntityDamage" operation="base_add" value="-6" tags="perkArchery"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="1" tags="perkArchery"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value=".07,.35" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value=".07,.35" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 
@@ -5363,7 +5363,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 
-		<passive_effect name="EntityDamage" operation="base_add" value="-4" tags="perkArchery"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="3" tags="perkArchery"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".08,.4" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
@@ -5464,7 +5464,7 @@ needed?
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkArchery"/> <!-- random effective rng -->
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
-
+        <passive_effect name="EntityDamage" operation="base_add" value="5" tags="perkArchery"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".09,.45" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
@@ -5556,7 +5556,7 @@ needed?
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> <!-- 3.4s -->
 		<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.1" tags="perkArchery"/>
 
-		<passive_effect name="EntityDamage" operation="base_add" value="-6" tags="perkArchery"/>
+		<passive_effect name="EntityDamage" operation="base_add" value="4" tags="perkArchery"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".08,.4" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
@@ -5647,7 +5647,7 @@ needed?
 		<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".5" tags="perkArchery"/> <!-- 3.4s -->
-
+        <passive_effect name="EntityDamage" operation="base_add" value="8" tags="perkArchery"/>
 		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random EntityDmg -->
 		<passive_effect name="EntityDamage" operation="perc_add" value=".09,.45" tier="2,6" tags="perkArchery"/> <!-- tier bonus -->
 		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkArchery"/> <!-- random BlockDmg -->
@@ -6338,7 +6338,7 @@ needed?
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
 		<property name="Range" value="1.75"/>
-		<property name="DamageEntity" value="12.5"/>
+		<property name="DamageEntity" value="15"/>
 		<property name="DamageBlock" value="15"/>
 	</property>
 	<property class="Action1"> <!-- UseAction -->
@@ -6480,7 +6480,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCop"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="20"/>
+		<property name="DamageEntity" value="25"/>
 		<property name="DamageBlock" value="30"/>
 	</property>
 	<property class="Action1"> <!-- Fire action -->
@@ -6533,7 +6533,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="30"/>
+		<property name="DamageEntity" value="35"/>
 		<property name="DamageBlock" value="40"/>
 	</property>
 	<property class="Action1">
@@ -6586,7 +6586,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="17.5"/>
+		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="20"/>
 	</property>
 	<property class="Action1">
@@ -6639,7 +6639,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopFeral"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="35"/>
+		<property name="DamageEntity" value="45"/>
 		<property name="DamageBlock" value="50"/>
 	</property>
 	<property class="Action1">
@@ -6692,7 +6692,7 @@ needed?
 	<property name="Extends" value="meleeHandZombieCopRadiated"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="40"/>
+		<property name="DamageEntity" value="55"/>
 		<property name="DamageBlock" value="60"/>
 	</property>
 	<property class="Action1">

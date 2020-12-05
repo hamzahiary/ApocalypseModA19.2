@@ -464,7 +464,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="qt_raphael" count="1" prob="0.2"/>
 		</trader_item_group>
 
-		<trader_item_group name="perkBooks" count="2">
+		<trader_item_group name="perkBooks" count="1">
 			<item name="bookRangersArrowRecovery"/>
 			<item name="bookRangersCripplingShot"/>
 			<item name="bookRangersKnockdown"/>
@@ -768,7 +768,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="schematicsElectrical" prob="13"/>
 		</trader_item_group>
 
-		<trader_item_group name="rareBooks" count="2">
+		<trader_item_group name="rareBooks" count="1">
 			<item name="meleeWpnBladeT3MacheteSchematic"/>
 			<item name="gunBowT3CompoundBowSchematic"/>
 			<item name="gunBowT3CompoundCrossbowSchematic"/>
@@ -813,7 +813,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="resourceMilitaryFiberSchematic"/>
 		</trader_item_group>
 
-		<trader_item_group name="books" count="2">
+		<trader_item_group name="books" count="1">
 			<item group="groupQuestChallenge" prob="0.2"/>
 			<item group="rareBooks" prob="0.3"/>
 			<item group="commonBooks"/>
@@ -1060,7 +1060,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="resourceLockPick" count="10,50"/>
 		</trader_item_group>
 
-		<trader_item_group name="rareTools" count="2">
+		<trader_item_group name="rareTools" count="1">
 			<item name="meleeToolAllSteelParts" count="1"/>
 			<item name="meleeToolAxeT3Chainsaw" quality="1"/>
 			<item name="meleeToolPickT3Auger" quality="1"/>
@@ -1075,7 +1075,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="toolForgeCrucible"/>
 		</trader_item_group>
 
-		<trader_item_group name="tools" count="6">
+		<trader_item_group name="tools" count="3">
 			<item name="meleeToolPickT1IronPickaxe" quality="1,2"/>
 			<item name="meleeToolShovelT1IronShovel" quality="1,2"/>
 			<item name="meleeToolAxeT1IronFireaxe" quality="1,2"/>
@@ -1297,7 +1297,6 @@ workstations
 			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="clothes" count="1,6"/>
 			<item group="groupArmorLightMixed" count="1,3"/>
@@ -1313,13 +1312,10 @@ workstations
 			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="groupArmorLightMixed" count="1"/>
 			<item group="groupArmorHeavyMixed" count="1"/>
-			<item group="commonBooks" count="1,2"/>
-			<item group="rareBooks" count="1"/>
-			<item group="perkBooks" count="1"/>
+			<item group="commonBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="2"/>
 			<item group="vehiclePartsT0" count="1"/>
@@ -1337,9 +1333,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="groupArmorLightMixed" count="1,2"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
 			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="2"/>
@@ -1356,9 +1352,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="1,2"/>
 			<item group="groupArmorLightT2" count="1,2"/>
-			<item group="commonBooks" count="3,4"/>
-			<item group="rareBooks" count="2"/>
-			<item group="perkBooks" count="2"/>
+			<item group="commonBooks" count="2,3"/>
+			<item group="rareBooks" count="1,2"/>
+			<item group="perkBooks" count="1,2"/>
 			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
 			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
@@ -1378,9 +1374,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="2,3"/>
 			<item group="groupArmorLightT2" count="2,3"/>
-			<item group="commonBooks" count="4,5"/>
-			<item group="rareBooks" count="2,3"/>
-			<item group="perkBooks" count="2,3"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
 			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
 			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
@@ -1409,7 +1405,6 @@ workstations
 			<item group="weaponsGunsT1" count="1"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="clothes" count="1,4"/>
 			<item group="groupArmorLightMixed" count="1,2"/>
@@ -1424,13 +1419,10 @@ workstations
 			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
-			<item group="medicine" count="2" prob="1"/>>
+			<item group="medicine" count="2" prob="1"/>
 			<item group="groupArmorLightMixed" count="1"/>
 			<item group="groupArmorHeavyMixed" count="1"/>
-			<item group="commonBooks" count="1,2"/>
-			<item group="rareBooks" count="1"/>
-			<item group="perkBooks" count="1"/>
+			<item group="commonBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="2"/>
 			<item group="vehiclePartsMixed" count="1"/>
@@ -1448,9 +1440,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="groupArmorLightMixed" count="1,2"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
 			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="2"/>
@@ -1467,9 +1459,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="1,2"/>
 			<item group="groupArmorLightT2" count="1,2"/>
-			<item group="commonBooks" count="3,4"/>
-			<item group="rareBooks" count="2"/>
-			<item group="perkBooks" count="2"/>
+			<item group="commonBooks" count="2,3"/>
+			<item group="rareBooks" count="1,2"/>
+			<item group="perkBooks" count="1,2"/>
 			<item name="armorMiningHelmet" quality="3,4" mods="modArmorHelmetLight" mod_chance="1"/>
 			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
@@ -1489,9 +1481,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="2,3"/>
 			<item group="groupArmorLightT2" count="2,3"/>
-			<item group="commonBooks" count="4,5"/>
-			<item group="rareBooks" count="2,3"/>
-			<item group="perkBooks" count="2,3"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
 			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
 			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
@@ -1508,7 +1500,7 @@ workstations
 	<trader_info id="2" full_reset="true" min_inventory="60" max_inventory="120" min_items_swapped="40" max_items_swapped="40"
 		reset_interval="2" open_time="4:00" close_time="22:00">
 		<trader_items count="all">
-			<item group="rareMedicine" count="1,2" prob="1"/>
+			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2,3" prob="1"/>
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="2,4"/>
@@ -1534,9 +1526,7 @@ workstations
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="1"/>
 			<item group="groupArmorLightMixed" count="1"/>
-			<item group="commonBooks" count="1,2"/>
-			<item group="rareBooks" count="1"/>
-			<item group="perkBooks" count="1"/>
+			<item group="commonBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="2"/>
 			<item group="vehiclePartsT0" count="1"/>
@@ -1555,9 +1545,9 @@ workstations
 			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorLightMixed" count="1"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
 			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="2"/>
@@ -1574,9 +1564,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="1"/>
 			<item group="groupArmorLightT2" count="2"/>
-			<item group="commonBooks" count="2,4"/>
-			<item group="rareBooks" count="2"/>
-			<item group="perkBooks" count="2"/>
+			<item group="commonBooks" count="2,3"/>
+			<item group="rareBooks" count="1,2"/>
+			<item group="perkBooks" count="1,2"/>
 			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="1,2"/>
 			<item group="modAllT4SecretStash" count="2,3"/>
@@ -1594,9 +1584,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="2,3"/>
 			<item group="groupArmorLightT2" count="2,3"/>
-			<item group="commonBooks" count="4,5"/>
-			<item group="rareBooks" count="2,3"/>
-			<item group="perkBooks" count="2,3"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
 			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
@@ -1618,7 +1608,6 @@ workstations
 			<item group="decorativeBlocks" count="2,7"/>
 			<item group="tools" count="1,2"/>
 			<item group="ammo" count="2"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="weaponsMeleeT0-1" count="1"/>
 			<item group="weaponsGunsT1" count="1"/>
@@ -1636,13 +1625,10 @@ workstations
 			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
 			<item group="ammo" count="2,3"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="groupArmorLightMixed" count="1,2"/>
 			<item group="groupArmorHeavyMixed" count="1,2"/>
-			<item group="commonBooks" count="1,2"/>
-			<item group="rareBooks" count="1"/>
-			<item group="perkBooks" count="1"/>
+			<item group="commonBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="2"/>
 			<item group="vehiclePartsT0" count="1"/>
@@ -1660,9 +1646,9 @@ workstations
 			<item group="ammo" count="3,4"/>
 			<item group="groupArmorHeavyMixed" count="2,3"/>
 			<item group="groupArmorLightMixed" count="2,3"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
 			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="2"/>
@@ -1679,7 +1665,7 @@ workstations
 			<item group="ammo" count="3,4"/>
 			<item group="groupArmorHeavyT2" count="2,3"/>
 			<item group="groupArmorLightT2" count="2,3"/>
-			<item group="commonBooks" count="3,4"/>
+			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="perkBooks" count="1,2"/>
 			<item group="vehiclePartsMixed" count="1,3"/>
@@ -1700,9 +1686,9 @@ workstations
 			<item group="ammo" count="4,5"/>
 			<item group="groupArmorHeavyT2" count="4"/>
 			<item group="groupArmorLightT2" count="4"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
 			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
 			<item name="solarbank" count="1"/>
@@ -1727,7 +1713,6 @@ workstations
 			<item group="decorativeBlocks" count="1,3"/>
 			<item group="tools" count="1,2"/>
 			<item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="weaponsMeleeT0-1" count="1"/>
 			<item group="weaponsGunsT1" count="1"/>
@@ -1745,13 +1730,10 @@ workstations
 			<item group="weaponsGunsMixed" count="1,2"/>
 			<item group="weaponsGunParts" count="1"/>
             <item group="ammo" count="1"/>
-			<item group="rareMedicine" count="1" prob="1"/>
 			<item group="medicine" count="2" prob="1"/>
 			<item group="groupArmorLightMixed" count="1"/>
 			<item group="groupArmorHeavyMixed" count="1"/>
-			<item group="commonBooks" count="1,2"/>
-			<item group="rareBooks" count="1"/>
-			<item group="perkBooks" count="1"/>
+			<item group="commonBooks" count="1"/>
 			<item group="modMeleeT1"/>
 			<item group="modAllT2SecretStash" count="2"/>
 			<item group="vehiclePartsT0" count="1"/>
@@ -1769,9 +1751,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyMixed" count="1,2"/>
 			<item group="groupArmorLightMixed" count="1,2"/>
-			<item group="commonBooks" count="2,3"/>
-			<item group="rareBooks" count="1,2"/>
-			<item group="perkBooks" count="1,2"/>
+			<item group="commonBooks" count="1,2"/>
+			<item group="rareBooks" count="1"/>
+			<item group="perkBooks" count="1"/>
 			<item group="vehiclePartsMixed" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
 			<item group="modAllT3SecretStash" count="2"/>
@@ -1788,9 +1770,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="1,2"/>
 			<item group="groupArmorLightT2" count="1,2"/>
-			<item group="commonBooks" count="3,4"/>
-			<item group="rareBooks" count="2"/>
-			<item group="perkBooks" count="2"/>
+			<item group="commonBooks" count="2,3"/>
+			<item group="rareBooks" count="1,2"/>
+			<item group="perkBooks" count="1,2"/>
 			<item group="vehiclePartsMixed" count="1,3"/>
 			<item group="stashOnlyItemsHigh" count="2,3"/>
 			<item group="weaponsGunsT3" count="1,2"/>
@@ -1809,9 +1791,9 @@ workstations
 			<item group="ammo" count="1,2"/>
 			<item group="groupArmorHeavyT2" count="2,3"/>
 			<item group="groupArmorLightT2" count="2,3"/>
-			<item group="commonBooks" count="4,5"/>
-			<item group="rareBooks" count="2,3"/>
-			<item group="perkBooks" count="2,3"/>
+			<item group="commonBooks" count="3,4"/>
+			<item group="rareBooks" count="2"/>
+			<item group="perkBooks" count="2"/>
 			<item name="armorMiningHelmet" quality="3,5" mods="modArmorHelmetLight" mod_chance="1"/>
 			<item group="vehiclePartsMixed" count="2,3"/>
 			<item name="apparelNightvisionGoggles" count="1"/>
