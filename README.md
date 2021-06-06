@@ -1,1 +1,6 @@
-Welcome to the Apocalypse Mod for 7 days to die A19.2
+**Description:**
+# Apocalypse Now mod
+
+Details:
+- Added custom logo and menu.
+- Added Action skills.
